@@ -1,0 +1,6 @@
+#!/bin/sh
+sd_location=/storage/sdcard0
+
+#Don't Edit below this line, it just works
+
+encoded_sd_location=${sd_location//\//\/\/}

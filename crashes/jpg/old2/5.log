@@ -1,0 +1,615 @@
+--------- beginning of main
+W/OpenGLRenderer( 1193): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+W/OpenGLRenderer( 1193): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+D/AndroidRuntime(14622): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+D/AndroidRuntime(14622): CheckJNI is OFF
+D/AndroidRuntime(14622): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+I/ActivityManager(  598): START u0 {act=android.intent.action.VIEW dat=file:///storage//sdcard0//tzeench//fuzzed.jpg typ=image/* flg=0x10000000 cmp=com.android.gallery3d/.app.GalleryActivity} from uid 2000 on display 0
+D/AndroidRuntime(14622): Shutting down VM
+V/WindowManager(  598): addAppToken: AppWindowToken{254a1c51 token=Token{3f3c2d78 ActivityRecord{18aabedb u0 com.android.gallery3d/.app.GalleryActivity t9}}} to stack=1 task=9 at 179
+V/StateManager(10631): startState class com.android.gallery3d.app.SinglePhotoPage
+I/art     (10631): Clamp target GC heap from 527MB to 512MB
+I/art     (10631): Alloc partial concurrent mark sweep GC freed 1033(60KB) AllocSpace objects, 1(81KB) LOS objects, 0% free, 511MB/512MB, paused 1.800ms total 51.116ms
+I/art     (10631): Clamp target GC heap from 519MB to 512MB
+I/art     (10631): WaitForGcToComplete blocked for 41.931ms for cause Alloc
+V/WindowManager(  598): Adding window Window{c432c8d u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity} at 93 of 97 (after Window{ef2f691 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity})
+I/Adreno-EGL(10631): <qeglDrvAPI_eglInitialize:410>: EGL 1.4 QUALCOMM build: AU_LINUX_ANDROID_LA.AF.1.1.04.04.03.164.081_msm8960_LA.AF.1.1__release_AU ()
+I/Adreno-EGL(10631): OpenGL ES Shader Compiler Version: E031.25.01.03
+I/Adreno-EGL(10631): Build Date: 11/02/14 Sun
+I/Adreno-EGL(10631): Local Branch: mybranch5454281
+I/Adreno-EGL(10631): Remote Branch: quic/l_LNX.LA.3.6
+I/Adreno-EGL(10631): Local Patches: NONE
+I/Adreno-EGL(10631): Reconstruct Branch: AU_LINUX_ANDROID_LA.AF.1.1.04.04.03.164.081 + db92d1e + cb8de02 +  NOTHING
+I/OpenGLRenderer(10631): Initialized EGL, version 1.4
+V/WindowManager(  598): Adding window Window{f702e53 u0 SurfaceView} at 93 of 98 (before Window{c432c8d u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity})
+I/GLRootView(10631): onSurfaceChanged: 1080x1845, gl10: com.google.android.gles_jni.GLImpl@9712703
+I/GLRootView(10631): layout content pane 1080x1845 (compensation 0)
+I/ActivityManager(  598): Displayed com.android.gallery3d/.app.GalleryActivity: +399ms
+E/Sensors (  598): Acc old sensor_state 2176, new sensor_state : 2177 en : 1
+I/GLRootView(10631): layout content pane 1080x1845 (compensation 0)
+D/PhotoView(10631): compensation = 0, CameraRelativeFrame = Rect(0, 0 - 0, 0), mCameraRect = Rect(0, 0 - 0, 0)
+I/art     (10631): Alloc sticky concurrent mark sweep GC freed 1472(94KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 511MB/512MB, paused 1.525ms total 8.270ms
+I/art     (10631): Clamp target GC heap from 527MB to 512MB
+I/art     (10631): Alloc partial concurrent mark sweep GC freed 940(58KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 511MB/512MB, paused 1.403ms total 34.149ms
+I/art     (10631): Clamp target GC heap from 527MB to 512MB
+I/art     (10631): Alloc concurrent mark sweep GC freed 53(2272B) AllocSpace objects, 0(0B) LOS objects, 0% free, 511MB/512MB, paused 1.800ms total 41.595ms
+I/art     (10631): Forcing collection of SoftReferences for 2MB allocation
+I/art     (10631): Clamp target GC heap from 527MB to 512MB
+I/art     (10631): Alloc concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 0% free, 511MB/512MB, paused 1.861ms total 82.275ms
+E/art     (10631): Throwing OutOfMemoryError "Failed to allocate a 2536932 byte allocation with 367312 free bytes and 358KB until OOM"
+I/art     (10631): WaitForGcToComplete blocked for 82.672ms for cause Background
+I/art     (10631): Background sticky concurrent mark sweep GC freed 5(448B) AllocSpace objects, 0(0B) LOS objects, 0% free, 511MB/512MB, paused 5.798ms total 20.721ms
+I/art     (10631): WaitForGcToComplete blocked for 21.423ms for cause Alloc
+I/art     (10631): Clamp target GC heap from 527MB to 512MB
+I/art     (10631): Alloc partial concurrent mark sweep GC freed 6(192B) AllocSpace objects, 0(0B) LOS objects, 0% free, 511MB/512MB, paused 2.044ms total 62.133ms
+I/art     (10631): Alloc sticky concurrent mark sweep GC freed 0(0B) AllocSpace objects, 0(0B) LOS objects, 0% free, 511MB/512MB, paused 1.525ms total 7.568ms
+I/art     (10631): Clamp target GC heap from 527MB to 512MB
+I/art     (10631): Alloc concurrent mark sweep GC freed 6(192B) AllocSpace objects, 0(0B) LOS objects, 0% free, 511MB/512MB, paused 1.861ms total 40.954ms
+I/art     (10631): Forcing collection of SoftReferences for 2MB allocation
+I/art     (10631): Clamp target GC heap from 527MB to 512MB
+I/art     (10631): Alloc concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 0% free, 511MB/512MB, paused 1.586ms total 41.473ms
+I/art     (10631): WaitForGcToComplete blocked for 90.728ms for cause Background
+E/art     (10631): Throwing OutOfMemoryError "Failed to allocate a 2536932 byte allocation with 367248 free bytes and 358KB until OOM"
+D/skia    (10631): --- decoder->decode returned false
+I/Timeline(10631): Timeline: Activity_idle id: android.os.BinderProxy@1016cbb2 time:3376206
+I/Process (10631): Sending signal. PID: 10631 SIG: 9
+W/InputDispatcher(  598): channel '38186047 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '38186047 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '125dcb41 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '125dcb41 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '217adf04 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '217adf04 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '21dd0ca0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '21dd0ca0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '3fe1bbef com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '3fe1bbef com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '9579f8a com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '9579f8a com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '66f33e1 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '66f33e1 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '29dfe024 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '29dfe024 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '7fbf543 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '7fbf543 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '400b8ee com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '400b8ee com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '12c1ec95 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '12c1ec95 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '5170068 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '5170068 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel 'f65e257 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel 'f65e257 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '26181912 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '26181912 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '2aee9b09 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '2aee9b09 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '473916c com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '473916c com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '1d92f72b com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '1d92f72b com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '9b7c3f6 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '9b7c3f6 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel 'b27133d com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel 'b27133d com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '25617730 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '25617730 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '37b067bf com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '37b067bf com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '940c4fd com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '940c4fd com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '1879d3f0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '1879d3f0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '35736b7f com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '35736b7f com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '2bb8545a com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '2bb8545a com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '3143aef1 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '3143aef1 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '20e7d674 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '20e7d674 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '37de9fd3 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '37de9fd3 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '20c2a4be com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '20c2a4be com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '18f50aa5 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '18f50aa5 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '3a09f5b8 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '3a09f5b8 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '2d5b97e7 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '2d5b97e7 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '39248be2 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '39248be2 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '2fb9ec19 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '2fb9ec19 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '1f1855bc com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '1f1855bc com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '3ae00469 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '3ae00469 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '2dd78a4c com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '2dd78a4c com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '2be0c58b com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '2be0c58b com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '1cc765d6 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '1cc765d6 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '1b089e9d com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '1b089e9d com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '339bfa10 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '339bfa10 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel '3f45597a com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel '3f45597a com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel 'ef2f691 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel 'ef2f691 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  598): channel 'c432c8d com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  598): channel 'c432c8d com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+I/WindowState(  598): WIN DEATH: Window{30e481f u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{db85135 u0 SurfaceView} from container Window{30e481f u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '1cc765d6 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@e08576c does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{1cc765d6 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{32539744 u0 SurfaceView} from container Window{1cc765d6 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel 'ef2f691 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{ef2f691 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{79871f7 u0 SurfaceView} from container Window{ef2f691 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+I/WindowState(  598): WIN DEATH: Window{12552d88 u0 SurfaceView}
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@29b959f6 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel 'c432c8d com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '3ae00469 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{c432c8d u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+I/WindowState(  598): WIN DEATH: Window{3ae00469 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{18d70f8f u0 SurfaceView} from container Window{3ae00469 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '2dd78a4c com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{f702e53 u0 SurfaceView}
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@24f00eee does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{2dd78a4c u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{268d87aa u0 SurfaceView} from container Window{2dd78a4c u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '2be0c58b com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@33b13a95 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{2be0c58b u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{21d8ba81 u0 SurfaceView} from container Window{2be0c58b u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@3f66a668 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{275cd412 u0 SurfaceView}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '1b089e9d com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{1b089e9d u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{332996e3 u0 SurfaceView} from container Window{1b089e9d u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+D/AndroidRuntime(14677): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '339bfa10 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+D/AndroidRuntime(14677): CheckJNI is OFF
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@2d6d8f12 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{339bfa10 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{3163470e u0 SurfaceView} from container Window{339bfa10 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/art     (  598): Long monitor contention event with owner method=void com.android.server.wm.WindowState$DeathRecipient.binderDied() from WindowState.java:1139 waiters=12 for 118ms
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '35736b7f com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@37fa8909 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{35736b7f u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{333b9395 u0 SurfaceView} from container Window{35736b7f u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/art     (  598): Long monitor contention event with owner method=void com.android.server.wm.WindowState$DeathRecipient.binderDied() from WindowState.java:1139 waiters=12 for 120ms
+W/art     (  598): Long monitor contention event with owner method=void com.android.server.wm.WindowState$DeathRecipient.binderDied() from WindowState.java:1139 waiters=12 for 116ms
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '2bb8545a com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@101fa74c does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{2bb8545a u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{3a28d368 u0 SurfaceView} from container Window{2bb8545a u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@1ecb868b does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{e328ef6 u0 SurfaceView}
+W/art     (  598): Long monitor contention event with owner method=void com.android.server.wm.WindowState$DeathRecipient.binderDied() from WindowState.java:1139 waiters=12 for 123ms
+I/WindowState(  598): WIN DEATH: Window{165dd157 u0 SurfaceView}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '20e7d674 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{20e7d674 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '3f45597a com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{3f45597a u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '37de9fd3 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{37de9fd3 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{33d69209 u0 SurfaceView} from container Window{37de9fd3 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@eae8710 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{18f6f6bf u0 SurfaceView}
+I/WindowState(  598): WIN DEATH: Window{1707f46c u0 SurfaceView}
+W/art     (  598): Long monitor contention event with owner method=void com.android.server.wm.WindowState$DeathRecipient.binderDied() from WindowState.java:1139 waiters=12 for 116ms
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '18f50aa5 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{18f50aa5 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{3f2eb62b u0 SurfaceView} from container Window{18f50aa5 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/art     (  598): Long monitor contention event with owner method=void com.android.server.wm.WindowState$DeathRecipient.binderDied() from WindowState.java:1139 waiters=12 for 114ms
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '3a09f5b8 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@2a31fe7a does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{3a09f5b8 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '3143aef1 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{3143aef1 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/art     (  598): Long monitor contention event with owner method=void com.android.server.wm.WindowState$DeathRecipient.binderDied() from WindowState.java:1139 waiters=11 for 104ms
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '2d5b97e7 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{2d5b97e7 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{35fc5a3d u0 SurfaceView} from container Window{2d5b97e7 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '39248be2 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@1bf23f94 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{39248be2 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{9036a30 u0 SurfaceView} from container Window{39248be2 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+D/AndroidRuntime(14677): Calling main entry com.android.commands.am.Am
+W/art     (  598): Long monitor contention event with owner method=void com.android.server.wm.WindowAnimator$1.run() from WindowAnimator.java:130 waiters=11 for 103ms
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@9fa9b73 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '2fb9ec19 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '20c2a4be com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{2fb9ec19 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+I/WindowState(  598): WIN DEATH: Window{20c2a4be u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '1f1855bc com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{1f1855bc u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{3162589a u0 SurfaceView} from container Window{1f1855bc u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '1d92f72b com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@32e3f945 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{1d92f72b u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{1d095521 u0 SurfaceView} from container Window{1d92f72b u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@35248788 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{a031c1c u0 SurfaceView}
+I/WindowState(  598): WIN DEATH: Window{9c97264 u0 SurfaceView}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel 'b27133d com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{b27133d u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{f0fac83 u0 SurfaceView} from container Window{b27133d u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '25617730 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@5adf732 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{25617730 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{16e8d92e u0 SurfaceView} from container Window{25617730 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '37b067bf com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@3bf08fa9 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{37b067bf u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{3b30c5ea u0 SurfaceView} from container Window{37b067bf u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '940c4fd com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@2e7d89d5 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{940c4fd u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{38071443 u0 SurfaceView} from container Window{940c4fd u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '400b8ee com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '9b7c3f6 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@54725f2 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{400b8ee u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+I/WindowState(  598): WIN DEATH: Window{9b7c3f6 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '12c1ec95 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{12c1ec95 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{e01c19b u0 SurfaceView} from container Window{12c1ec95 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '5170068 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@22e551aa does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{5170068 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{1259d126 u0 SurfaceView} from container Window{5170068 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel 'f65e257 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@255b0c81 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{f65e257 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{17dc422d u0 SurfaceView} from container Window{f65e257 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '9579f8a com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@3fa21144 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{9579f8a u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{28198a18 u0 SurfaceView} from container Window{9579f8a u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+I/WindowState(  598): WIN DEATH: Window{343732e0 u0 SurfaceView}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '2aee9b09 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{2aee9b09 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{26af172f u0 SurfaceView} from container Window{2aee9b09 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '1879d3f0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{1879d3f0 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{253263ee u0 SurfaceView} from container Window{1879d3f0 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '125dcb41 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '217adf04 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@2ccaf10e does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{125dcb41 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{29bb8e27 u0 SurfaceView} from container Window{125dcb41 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@1b2388e6 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{217adf04 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{21f1f722 u0 SurfaceView} from container Window{217adf04 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '21dd0ca0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{21dd0ca0 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{2e5e841e u0 SurfaceView} from container Window{21dd0ca0 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '3fe1bbef com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@325c5ced does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{3fe1bbef u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{1dbdf185 u0 SurfaceView} from container Window{3fe1bbef u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '38186047 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+E/Sensors (  598): Acc old sensor_state 2177, new sensor_state : 2176 en : 0
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@43a06fc does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{38186047 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{3ab4499d u0 SurfaceView} from container Window{38186047 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '66f33e1 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  598): WIN DEATH: Window{66f33e1 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{330fb7c7 u0 SurfaceView} from container Window{66f33e1 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '29dfe024 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/ActivityManager(  598): Process com.android.gallery3d (pid 10631) has died
+W/ActivityManager(  598): Force removing ActivityRecord{18aabedb u0 com.android.gallery3d/.app.GalleryActivity t9}: app died, no saved state
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@202dd506 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{29dfe024 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{c4cad42 u0 SurfaceView} from container Window{29dfe024 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '473916c com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@a75978d does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{473916c u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Force-removing child win Window{b15b3ca u0 SurfaceView} from container Window{473916c u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+I/WindowState(  598): WIN DEATH: Window{2623fcf9 u0 SurfaceView}
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '7fbf543 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/art     (  598): Background partial concurrent mark sweep GC freed 54665(1870KB) AllocSpace objects, 14(16MB) LOS objects, 29% free, 37MB/53MB, paused 2.716ms total 159.698ms
+I/WindowState(  598): WIN DEATH: Window{7fbf543 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+I/art     (  598): WaitForGcToComplete blocked for 47.149ms for cause HeapTrim
+W/InputDispatcher(  598): Attempted to unregister already unregistered input channel '26181912 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@28b75059 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+I/WindowState(  598): WIN DEATH: Window{26181912 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  598): Failed looking up window
+W/WindowManager(  598): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@10c0335 does not exist
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  598): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  598): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  598): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  598): WIN DEATH: null
+V/WindowManager(  598): Adding window Window{1f5b9bf2 u0 Starting com.android.gallery3d} at 5 of 9 (after Window{39e13b2d u0 Starting com.android.gallery3d})
+I/ActivityManager(  598): Start proc 14692:com.android.gallery3d/u0a37 for activity com.android.gallery3d/.app.GalleryActivity
+I/ActivityManager(  598): START u0 {act=android.intent.action.VIEW dat=file:///storage//sdcard0//tzeench//reference.jpg typ=image/* flg=0x10000000 cmp=com.android.gallery3d/.app.GalleryActivity} from uid 2000 on display 0
+D/AndroidRuntime(14677): Shutting down VM
+V/WindowManager(  598): addAppToken: AppWindowToken{3e7921f9 token=Token{1f62a0c0 ActivityRecord{12b15243 u0 com.android.gallery3d/.app.GalleryActivity t9}}} to stack=1 task=9 at 179
+V/WindowManager(  598): Adding window Window{89bc7d8 u0 Starting com.android.gallery3d} at 6 of 10 (after Window{1f5b9bf2 u0 Starting com.android.gallery3d})
+W/ResourcesManager(14692): Asset path '/system/framework/com.google.android.media.effects.jar' does not exist or contains no resources.
+V/StateManager(14692): startState class com.android.gallery3d.app.SinglePhotoPage
+E/Gallery2/DrmHelper(14692): Could not get drm file path
+D/OpenGLRenderer(14692): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+D/Atlas   (14692): Validating map...
+V/WindowManager(  598): Adding window Window{14fe851c u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity} at 6 of 10 (before Window{89bc7d8 u0 Starting com.android.gallery3d})
+I/Adreno-EGL(14692): <qeglDrvAPI_eglInitialize:410>: EGL 1.4 QUALCOMM build: AU_LINUX_ANDROID_LA.AF.1.1.04.04.03.164.081_msm8960_LA.AF.1.1__release_AU ()
+I/Adreno-EGL(14692): OpenGL ES Shader Compiler Version: E031.25.01.03
+I/Adreno-EGL(14692): Build Date: 11/02/14 Sun
+I/Adreno-EGL(14692): Local Branch: mybranch5454281
+I/Adreno-EGL(14692): Remote Branch: quic/l_LNX.LA.3.6
+I/Adreno-EGL(14692): Local Patches: NONE
+I/Adreno-EGL(14692): Reconstruct Branch: AU_LINUX_ANDROID_LA.AF.1.1.04.04.03.164.081 + db92d1e + cb8de02 +  NOTHING
+I/OpenGLRenderer(14692): Initialized EGL, version 1.4
+D/OpenGLRenderer(14692): Enabling debug mode 0
+V/WindowManager(  598): Adding window Window{b86fa u0 SurfaceView} at 6 of 11 (before Window{14fe851c u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity})
+I/ActivityManager(  598): Displayed com.android.gallery3d/.app.GalleryActivity: +402ms (total +457ms)
+I/GLRootView(14692): onSurfaceChanged: 1080x1845, gl10: com.google.android.gles_jni.GLImpl@255ac150
+I/GLRootView(14692): layout content pane 1080x1845 (compensation 0)
+W/InputMethodManagerService(  598): Got RemoteException sending setActive(false) notification to pid 10631 uid 10037
+E/Sensors (  598): Acc old sensor_state 2176, new sensor_state : 2177 en : 1
+I/Timeline(  598): Timeline: Activity_windows_visible id: ActivityRecord{12b15243 u0 com.android.gallery3d/.app.GalleryActivity t9} time:3377519
+I/GLRootView(14692): layout content pane 1080x1845 (compensation 0)
+D/PhotoView(14692): compensation = 0, CameraRelativeFrame = Rect(0, 0 - 0, 0), mCameraRect = Rect(0, 0 - 0, 0)
+D/AndroidRuntime(14720): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+D/AndroidRuntime(14720): CheckJNI is OFF
+D/AndroidRuntime(14720): Calling main entry com.android.commands.input.Input
+I/Input   (14720): injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=3377702, downTime=3377702, deviceId=-1, source=0x101 }
+I/Input   (14720): injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_BACK, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=3377702, downTime=3377702, deviceId=-1, source=0x101 }
+V/StateManager(14692): no more state, finish activity
+V/StateManager(14692): finishState com.android.gallery3d.app.SinglePhotoPage@2c7298fe
+D/AndroidRuntime(14720): Shutting down VM
+E/Sensors (  598): Acc old sensor_state 2177, new sensor_state : 2176 en : 0
+V/StateManager(14692): restoreFromState
+V/StateManager(14692): restoreFromState class com.android.gallery3d.app.SinglePhotoPage
+E/Gallery2/DrmHelper(14692): Could not get drm file path
+V/WindowManager(  598): Adding window Window{30beae4d u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity} at 5 of 11 (before Window{1f5b9bf2 u0 Starting com.android.gallery3d})
+V/WindowManager(  598): Adding window Window{2da5e613 u0 SurfaceView} at 5 of 12 (before Window{30beae4d u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity})
+I/GLRootView(14692): onSurfaceChanged: 1080x1845, gl10: com.google.android.gles_jni.GLImpl@2c760ba4
+I/GLRootView(14692): layout content pane 1080x1845 (compensation 0)
+I/ActivityManager(  598): Displayed com.android.gallery3d/.app.GalleryActivity: +961ms (total +185ms)
+E/Sensors (  598): Acc old sensor_state 2176, new sensor_state : 2177 en : 1
+W/GalleryExif(14692): Failed to read EXIF orientation
+W/GalleryExif(14692): java.io.EOFException
+W/GalleryExif(14692): 	at com.android.gallery3d.exif.CountedDataInputStream.readOrThrow(CountedDataInputStream.java:84)
+W/GalleryExif(14692): 	at com.android.gallery3d.exif.CountedDataInputStream.readShort(CountedDataInputStream.java:100)
+W/GalleryExif(14692): 	at com.android.gallery3d.exif.ExifParser.seekTiffData(ExifParser.java:784)
+W/GalleryExif(14692): 	at com.android.gallery3d.exif.ExifParser.<init>(ExifParser.java:210)
+W/GalleryExif(14692): 	at com.android.gallery3d.exif.ExifParser.parse(ExifParser.java:254)
+W/GalleryExif(14692): 	at com.android.gallery3d.exif.ExifReader.read(ExifReader.java:46)
+W/GalleryExif(14692): 	at com.android.gallery3d.exif.ExifInterface.readExif(ExifInterface.java:748)
+W/GalleryExif(14692): 	at com.android.gallery3d.data.Exif.getOrientation(Exif.java:38)
+W/GalleryExif(14692): 	at com.android.gallery3d.data.UriImage.openOrDownloadInner(UriImage.java:105)
+W/GalleryExif(14692): 	at com.android.gallery3d.data.UriImage.openFileOrDownloadTempFile(UriImage.java:83)
+W/GalleryExif(14692): 	at com.android.gallery3d.data.UriImage.prepareInputFile(UriImage.java:170)
+W/GalleryExif(14692): 	at com.android.gallery3d.data.UriImage.access$300(UriImage.java:42)
+W/GalleryExif(14692): 	at com.android.gallery3d.data.UriImage$RegionDecoderJob.run(UriImage.java:185)
+W/GalleryExif(14692): 	at com.android.gallery3d.data.UriImage$RegionDecoderJob.run(UriImage.java:174)
+W/GalleryExif(14692): 	at com.android.gallery3d.util.ThreadPool$Worker.run(ThreadPool.java:133)
+W/GalleryExif(14692): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/GalleryExif(14692): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/GalleryExif(14692): 	at java.lang.Thread.run(Thread.java:818)
+W/GalleryExif(14692): 	at com.android.gallery3d.util.PriorityThreadFactory$1.run(PriorityThreadFactory.java:44)
+D/skia    (14692): --- decoder->buildTileIndex returned false
+W/DecodeUtils(14692): java.io.IOException: Image failed to decode using JPEG decoder
+W/DecodeUtils(14692): 	at android.graphics.BitmapRegionDecoder.nativeNewInstance(Native Method)
+W/DecodeUtils(14692): 	at android.graphics.BitmapRegionDecoder.newInstance(BitmapRegionDecoder.java:89)
+W/DecodeUtils(14692): 	at com.android.gallery3d.data.DecodeUtils.createBitmapRegionDecoder(DecodeUtils.java:232)
+W/DecodeUtils(14692): 	at com.android.gallery3d.data.UriImage$RegionDecoderJob.run(UriImage.java:186)
+W/DecodeUtils(14692): 	at com.android.gallery3d.data.UriImage$RegionDecoderJob.run(UriImage.java:174)
+W/DecodeUtils(14692): 	at com.android.gallery3d.util.ThreadPool$Worker.run(ThreadPool.java:133)
+W/DecodeUtils(14692): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/DecodeUtils(14692): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/DecodeUtils(14692): 	at java.lang.Thread.run(Thread.java:818)
+W/DecodeUtils(14692): 	at com.android.gallery3d.util.PriorityThreadFactory$1.run(PriorityThreadFactory.java:44)
+W/Worker  (14692): Exception in running a job
+W/Worker  (14692): java.lang.NullPointerException: Attempt to invoke virtual method 'int android.graphics.BitmapRegionDecoder.getWidth()' on a null object reference
+W/Worker  (14692): 	at com.android.gallery3d.data.UriImage$RegionDecoderJob.run(UriImage.java:188)
+W/Worker  (14692): 	at com.android.gallery3d.data.UriImage$RegionDecoderJob.run(UriImage.java:174)
+W/Worker  (14692): 	at com.android.gallery3d.util.ThreadPool$Worker.run(ThreadPool.java:133)
+W/Worker  (14692): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/Worker  (14692): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/Worker  (14692): 	at java.lang.Thread.run(Thread.java:818)
+W/Worker  (14692): 	at com.android.gallery3d.util.PriorityThreadFactory$1.run(PriorityThreadFactory.java:44)
+W/SinglePhotoDataAdapter(14692): fail to get region decoder, try to request thumb image
+D/skia    (14692): --- decoder->decode returned false
+D/skia    (14692): --- decoder->decode returned false
+W/SinglePhotoDataAdapter(14692): fail to decode thumb
+W/SinglePhotoDataAdapter(14692): java.lang.NullPointerException: Attempt to invoke virtual method 'int android.graphics.Bitmap.getWidth()' on a null object reference
+W/SinglePhotoDataAdapter(14692): 	at com.android.gallery3d.app.SinglePhotoDataAdapter.onDecodeThumbComplete(SinglePhotoDataAdapter.java:151)
+W/SinglePhotoDataAdapter(14692): 	at com.android.gallery3d.app.SinglePhotoDataAdapter.access$200(SinglePhotoDataAdapter.java:39)
+W/SinglePhotoDataAdapter(14692): 	at com.android.gallery3d.app.SinglePhotoDataAdapter$1.handleMessage(SinglePhotoDataAdapter.java:70)
+W/SinglePhotoDataAdapter(14692): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+W/SinglePhotoDataAdapter(14692): 	at com.android.gallery3d.ui.SynchronizedHandler.dispatchMessage(SynchronizedHandler.java:36)
+W/SinglePhotoDataAdapter(14692): 	at android.os.Looper.loop(Looper.java:135)
+W/SinglePhotoDataAdapter(14692): 	at android.app.ActivityThread.main(ActivityThread.java:5294)
+W/SinglePhotoDataAdapter(14692): 	at java.lang.reflect.Method.invoke(Native Method)
+W/SinglePhotoDataAdapter(14692): 	at java.lang.reflect.Method.invoke(Method.java:372)
+W/SinglePhotoDataAdapter(14692): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+W/SinglePhotoDataAdapter(14692): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+I/Timeline(14692): Timeline: Activity_idle id: android.os.BinderProxy@a37eb36 time:3378020
+I/Timeline(  598): Timeline: Activity_windows_visible id: ActivityRecord{169241ff u0 com.android.gallery3d/.app.GalleryActivity t9} time:3378118
+V/StateManager(14692): destroy
+I/GLRootView(14692): layout content pane 1080x1845 (compensation 0)
+D/PhotoView(14692): compensation = 0, CameraRelativeFrame = Rect(0, 0 - 0, 0), mCameraRect = Rect(0, 0 - 0, 0)

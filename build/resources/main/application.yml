@@ -1,0 +1,8 @@
+com:
+  karmahostage:
+    tzeentch:
+      local:
+        workingdirectory: "/tmp/tzeentch"
+      android:
+        workingdirectory: "/storage/sdcard0/tzeentch"
+      environment: "osx"

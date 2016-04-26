@@ -1,0 +1,17 @@
+--------- beginning of system
+W/ActivityManager(  598): Activity pause timeout for ActivityRecord{32be6ba4 u0 com.android.gallery3d/.app.GalleryActivity t4}
+W/InputMethodManagerService(  598): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@2a489e10 attribute=null, token = android.os.BinderProxy@3f5d8c71
+--------- beginning of main
+I/Timeline( 1193): Timeline: Activity_idle id: android.os.BinderProxy@3be70c time:480142
+D/AndroidRuntime(15200): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+D/AndroidRuntime(15200): CheckJNI is OFF
+D/AndroidRuntime(15200): Calling main entry com.android.commands.am.Am
+I/ActivityManager(  598): START u0 {act=android.intent.action.VIEW dat=file:///storage//sdcard0//tzeench//fuzzed.png typ=image/* flg=0x10000000 cmp=com.android.gallery3d/.app.GalleryActivity} from uid 2000 on display 0
+V/WindowManager(  598): addAppToken: AppWindowToken{e3fa92f token=Token{da8b0e ActivityRecord{31745d09 u0 com.android.gallery3d/.app.GalleryActivity t4}}} to stack=1 task=4 at 114
+D/AndroidRuntime(15200): Shutting down VM
+F/libc    (15200): Fatal signal 11 (SIGSEGV), code 1, fault addr 0xb459e710 in tid 15211 (Binder_2)
+I/DEBUG   (  230): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  230): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  230): HINT: adb forward tcp:5039 tcp:5039
+E/DEBUG   (  230): unexpected waitpid response: n=15211, status=00000000
+E/DEBUG   (  230): tid exited before attach completed: tid 15211

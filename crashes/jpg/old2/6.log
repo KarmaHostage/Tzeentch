@@ -1,0 +1,35 @@
+--------- beginning of main
+W/OpenGLRenderer( 1193): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+W/OpenGLRenderer( 1193): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+D/AndroidRuntime(18974): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+D/AndroidRuntime(18974): CheckJNI is OFF
+D/AndroidRuntime(18974): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+I/ActivityManager(  598): START u0 {act=android.intent.action.VIEW dat=file:///storage//sdcard0//tzeench//fuzzed.jpg typ=image/* flg=0x10000000 cmp=com.android.gallery3d/.app.GalleryActivity} from uid 2000 on display 0
+V/WindowManager(  598): addAppToken: AppWindowToken{de5f3d7 token=Token{27663756 ActivityRecord{dbd6d71 u0 com.android.gallery3d/.app.GalleryActivity t9}}} to stack=1 task=9 at 223
+D/AndroidRuntime(18974): Shutting down VM
+V/StateManager(18931): startState class com.android.gallery3d.app.SinglePhotoPage
+E/Gallery2/DrmHelper(18931): Could not get drm file path
+D/OpenGLRenderer(18931): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+D/Atlas   (18931): Validating map...
+V/WindowManager(  598): Adding window Window{1647a85c u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity} at 6 of 9 (after Window{236edc8a u0 Starting com.android.gallery3d})
+I/Adreno-EGL(18931): <qeglDrvAPI_eglInitialize:410>: EGL 1.4 QUALCOMM build: AU_LINUX_ANDROID_LA.AF.1.1.04.04.03.164.081_msm8960_LA.AF.1.1__release_AU ()
+I/Adreno-EGL(18931): OpenGL ES Shader Compiler Version: E031.25.01.03
+I/Adreno-EGL(18931): Build Date: 11/02/14 Sun
+I/Adreno-EGL(18931): Local Branch: mybranch5454281
+I/Adreno-EGL(18931): Remote Branch: quic/l_LNX.LA.3.6
+I/Adreno-EGL(18931): Local Patches: NONE
+I/Adreno-EGL(18931): Reconstruct Branch: AU_LINUX_ANDROID_LA.AF.1.1.04.04.03.164.081 + db92d1e + cb8de02 +  NOTHING
+I/OpenGLRenderer(18931): Initialized EGL, version 1.4
+D/OpenGLRenderer(18931): Enabling debug mode 0
+V/WindowManager(  598): Adding window Window{14bf7c3a u0 SurfaceView} at 6 of 10 (before Window{1647a85c u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity})
+I/GLRootView(18931): onSurfaceChanged: 1080x1845, gl10: com.google.android.gles_jni.GLImpl@1b8a5b13
+I/GLRootView(18931): layout content pane 1080x1845 (compensation 0)
+I/ActivityManager(  598): Displayed com.android.gallery3d/.app.GalleryActivity: +335ms (total +1s236ms)
+E/Sensors (  598): Acc old sensor_state 2176, new sensor_state : 2177 en : 1
+I/Timeline(18931): Timeline: Activity_idle id: android.os.BinderProxy@2b7edb4d time:3500175
+I/GLRootView(18931): layout content pane 1080x1845 (compensation 0)
+D/PhotoView(18931): compensation = 0, CameraRelativeFrame = Rect(0, 0 - 0, 0), mCameraRect = Rect(0, 0 - 0, 0)
+I/Timeline(  598): Timeline: Activity_windows_visible id: ActivityRecord{dbd6d71 u0 com.android.gallery3d/.app.GalleryActivity t9} time:3500858
+D/lights  (  598): set_light_leds: type=0, color=0x00ffff6000, fM=0, fOnMS=0, fOffMs=0.
+D/lights  (  598): write_leds: color=0x00ff6000, delay_on=0, delay_off=0, blink="0x00ff6000 0 0".

@@ -1,0 +1,34 @@
+--------- beginning of main
+D/AndroidRuntime(11532): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+D/AndroidRuntime(11532): CheckJNI is OFF
+W/ResourceType(  792): No package identifier when getting value for resource number 0x00000000
+W/PackageManager(  792): Failure retrieving resources for com.android.gallery3d: Resource ID #0x0
+D/AndroidRuntime(11532): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+I/ActivityManager(  598): START u0 {act=android.intent.action.VIEW dat=file:///storage//sdcard0//tzeench//fuzzed.png typ=image/* flg=0x10000000 cmp=com.android.gallery3d/.app.GalleryActivity} from uid 2000 on display 0
+D/AndroidRuntime(11532): Shutting down VM
+D/skia    (22607): --- decoder->decode returned false
+E/Sensors (  598): Acc old sensor_state 2176, new sensor_state : 2177 en : 1
+I/GLRootView(22607): GLObject has changed from com.google.android.gles_jni.GLImpl@16e57409 to com.google.android.gles_jni.GLImpl@3103560e
+I/GLRootView(22607): onSurfaceChanged: 1080x1845, gl10: com.google.android.gles_jni.GLImpl@3103560e
+W/SinglePhotoDataAdapter(22607): fail to decode thumb
+W/SinglePhotoDataAdapter(22607): java.lang.NullPointerException: Attempt to invoke virtual method 'int android.graphics.Bitmap.getWidth()' on a null object reference
+W/SinglePhotoDataAdapter(22607): 	at com.android.gallery3d.app.SinglePhotoDataAdapter.onDecodeThumbComplete(SinglePhotoDataAdapter.java:151)
+W/SinglePhotoDataAdapter(22607): 	at com.android.gallery3d.app.SinglePhotoDataAdapter.access$200(SinglePhotoDataAdapter.java:39)
+W/SinglePhotoDataAdapter(22607): 	at com.android.gallery3d.app.SinglePhotoDataAdapter$1.handleMessage(SinglePhotoDataAdapter.java:70)
+W/SinglePhotoDataAdapter(22607): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+W/SinglePhotoDataAdapter(22607): 	at com.android.gallery3d.ui.SynchronizedHandler.dispatchMessage(SynchronizedHandler.java:36)
+W/SinglePhotoDataAdapter(22607): 	at android.os.Looper.loop(Looper.java:135)
+W/SinglePhotoDataAdapter(22607): 	at android.app.ActivityThread.main(ActivityThread.java:5294)
+W/SinglePhotoDataAdapter(22607): 	at java.lang.reflect.Method.invoke(Native Method)
+W/SinglePhotoDataAdapter(22607): 	at java.lang.reflect.Method.invoke(Method.java:372)
+W/SinglePhotoDataAdapter(22607): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+W/SinglePhotoDataAdapter(22607): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+I/Timeline(22607): Timeline: Activity_idle id: android.os.BinderProxy@1fe7535b time:1329747
+F/libc    (11532): Fatal signal 11 (SIGSEGV), code 1, fault addr 0xb459e710 in tid 11550 (Binder_2)
+I/DEBUG   (  230): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  230): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  230): HINT: adb forward tcp:5039 tcp:5039
+E/DEBUG   (  230): unexpected waitpid response: n=11550, status=00000000
+E/DEBUG   (  230): tid exited before attach completed: tid 11550
+I/Timeline(  598): Timeline: Activity_windows_visible id: ActivityRecord{131cc966 u0 com.android.gallery3d/.app.GalleryActivity t7} time:1330486

@@ -5,6 +5,6 @@
 . ./functions/common.sh
 
 format="gif"
-filtype="image/*"
+filetype="image/*"
 initialize
 fuzz

@@ -64,6 +64,7 @@ function wait_for_crash {
 
 function initialize {
   mkdir -p "./fuzzed/$format"
+  mkdir -p "./crashes/$format"
   id_gal=""
   add_example_file
   start_example_file
@@ -75,7 +76,7 @@ function fuzz {
   while [ 1 ] ;
   do
       radamsa learning/$format/* > ./fuzzed/$format/fuzzed.$format
-      adb push ./fuzzed/$format/fuzzed.$format /storage/sdcard0/tzeench/fuzzed.$format
+      adb push ./fuzzed/$format/fuzzed.$format $sd_location/tzeench/fuzzed.$format
       adb shell logcat -c
       adb shell am start -a android.intent.action.VIEW -t $filetype -d file:/$encoded_sd_location//tzeench//fuzzed.$format
       sleep 0.2

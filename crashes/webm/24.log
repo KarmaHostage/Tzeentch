@@ -1,0 +1,89 @@
+--------- beginning of main
+W/art     (  599): Long monitor contention event with owner method=void com.android.server.wm.WindowManagerService$H.handleMessage(android.os.Message) from WindowManagerService.java:7881 waiters=2 for 241ms
+D/AndroidRuntime( 3819): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+D/AndroidRuntime( 3819): CheckJNI is OFF
+W/art     (  599): Long monitor contention event with owner method=void com.android.server.wm.WindowManagerService.statusBarVisibilityChanged(int) from WindowManagerService.java:11078 waiters=2 for 150ms
+D/AndroidRuntime( 3819): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+I/ActivityManager(  599): START u0 {act=android.intent.action.VIEW dat=file:///storage//sdcard0//tzeench//fuzzed.webm typ=video/* flg=0x10000000 cmp=com.android.gallery3d/.app.MovieActivity} from uid 2000 on display 0
+W/art     (  599): Long monitor contention event with owner method=void com.android.server.wm.WindowManagerService$H.handleMessage(android.os.Message) from WindowManagerService.java:7881 waiters=0 for 205ms
+I/Timeline( 1188): Timeline: Activity_idle id: android.os.BinderProxy@8504708 time:35341165
+W/art     (  599): Long monitor contention event with owner method=void com.android.server.wm.WindowManagerService$H.handleMessage(android.os.Message) from WindowManagerService.java:7881 waiters=2 for 155ms
+W/art     (  599): Long monitor contention event with owner method=void com.android.server.wm.WindowManagerService.moveTaskToTop(int) from WindowManagerService.java:5214 waiters=1 for 144ms
+W/art     (  599): Long monitor contention event with owner method=int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface) from WindowManagerService.java:3082 waiters=1 for 207ms
+I/Choreographer( 4540): Skipped 36 frames!  The application may be doing too much work on its main thread.
+W/art     (  599): Long monitor contention event with owner method=int com.android.server.am.ActivityStackSupervisor.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, int, android.app.IActivityContainer, com.android.server.am.TaskRecord) from ActivityStackSupervisor.java:882 waiters=0 for 623ms
+W/art     (  599): Long monitor contention event with owner method=int com.android.server.am.ActivityStackSupervisor.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, int, android.app.IActivityContainer, com.android.server.am.TaskRecord) from ActivityStackSupervisor.java:882 waiters=1 for 620ms
+W/art     (  599): Long monitor contention event with owner method=int com.android.server.am.ActivityStackSupervisor.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, int, android.app.IActivityContainer, com.android.server.am.TaskRecord) from ActivityStackSupervisor.java:882 waiters=2 for 519ms
+D/AndroidRuntime( 3819): Shutting down VM
+W/InputMethodManagerService(  599): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@243d3cd5 (uid=10037 pid=4540)
+V/WindowManager(  599): addAppToken: AppWindowToken{15e91e8b token=Token{2ced4c5a ActivityRecord{24376405 u0 com.android.gallery3d/.app.MovieActivity t3687}}} to stack=1 task=3687 at 344
+I/Choreographer(  599): Skipped 54 frames!  The application may be doing too much work on its main thread.
+W/art     (  599): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6476 waiters=0 for 378ms
+W/art     (  599): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.activityPaused(android.os.IBinder) from ActivityManagerService.java:6476 waiters=1 for 283ms
+D/CodeauroraVideoView( 4540): setVideoURI uri = file:///storage//sdcard0//tzeench//fuzzed.webm
+E/MediaPlayer-JNI( 4540): QCMediaPlayer mediaplayer NOT present
+E/Gallery2/DrmHelper( 4540): Could not get drm file path
+I/MediaFocusControl(  599):  AudioFocus  requestAudioFocus() from android.media.AudioManager@3fe57f8c req=2flags=0x0
+V/WindowManager(  599): Adding window Window{1db39e98 u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity} at 892 of 895 (after Window{1ddfdf4c u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity EXITING})
+W/art     (  599): Long monitor contention event with owner method=int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface) from WindowManagerService.java:3082 waiters=1 for 171ms
+V/WindowManager(  599): Adding window Window{1c1f92d6 u0 SurfaceView} at 892 of 896 (before Window{1db39e98 u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity})
+E/MediaPlayer-JNI( 4540): QCMediaPlayer mediaplayer NOT present
+W/ALooperRoster( 2447): failed to post message. Target handler 0 still registered, but object gone.
+D/ExtendedUtils( 2447): extended extractor not needed, return default
+I/Choreographer( 4540): Skipped 41 frames!  The application may be doing too much work on its main thread.
+W/art     (  599): Long monitor contention event with owner method=int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface) from WindowManagerService.java:3082 waiters=0 for 101ms
+W/OpenGLRenderer( 1188): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+W/OpenGLRenderer( 1188): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+I/ActivityManager(  599): Displayed com.android.gallery3d/.app.MovieActivity: +1s681ms
+E/MediaPlayer( 4540): Should have subtitle controller already set
+D/MediaPlayer( 4540): getMetadata
+W/art     (  599): Long monitor contention event with owner method=int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface) from WindowManagerService.java:3082 waiters=1 for 160ms
+V/CodeauroraVideoView( 4540): surfaceChanged() start()
+D/NuPlayerDriver( 2447): start(0xb3850580)
+I/GenericSource( 2447): start
+I/ExtendedUtils( 2447): No channel mask, try channel count
+W/ExtendedUtils( 2447): No bitrate info
+I/NuPlayer( 2447): Could not offload audio decode, pcm offload decided :0
+W/OMXNodeInstance( 2447): [49:google.vp8.decoder] component does not support metadata mode; using fallback
+E/ACodec  ( 2447): [OMX.google.vp8.decoder] storeMetaDataInBuffers failed w/ err -1010
+I/ACodec  ( 2447): [OMX.google.vp8.decoder] DRC Mode: Port Reconfig Mode
+E/OMXNodeInstance( 2447): getParameter(49:google.vp8.decoder, ParamVideoAndroidVp8Encoder(0x6f600007)) ERROR: UnsupportedIndex(0x8000101a)
+F/SoftVorbis( 2447): frameworks/av/media/libstagefright/codecs/vorbis/dec/SoftVorbis.cpp:276 CHECK_EQ( 0,_vorbis_unpack_books(mVi, &bits)) failed: 0 vs. -133
+F/libc    ( 2447): Fatal signal 6 (SIGABRT), code -6 in tid 3886 (.vorbis.decoder)
+I/DEBUG   (  232): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  232): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  232): HINT: adb forward tcp:5039 tcp:5039
+W/MediaPlayer( 4540): info/warning (3, 0)
+I/DEBUG   (  232): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  232): Build fingerprint: 'samsung/jfltexx/jflte:5.0.1/LRX22C/I9505XXUHOB7:user/release-keys'
+E/DEBUG   (  232): AM write failure (32 / Broken pipe)
+I/DEBUG   (  232): Revision: '11'
+I/DEBUG   (  232): ABI: 'arm'
+I/DEBUG   (  232): pid: 2447, tid: 3886, name: .vorbis.decoder  >>> /system/bin/mediaserver <<<
+I/DEBUG   (  232): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+W/NativeCrashListener(  599): Couldn't find ProcessRecord for pid 2447
+I/DEBUG   (  232): Abort message: 'frameworks/av/media/libstagefright/codecs/vorbis/dec/SoftVorbis.cpp:276 CHECK_EQ( 0,_vorbis_unpack_books(mVi, &bits)) failed: 0 vs. -133'
+I/DEBUG   (  232):     r0 00000000  r1 00000f2e  r2 00000006  r3 00000000
+I/DEBUG   (  232):     r4 acfffdb8  r5 00000006  r6 00000000  r7 0000010c
+I/DEBUG   (  232):     r8 b5bff740  r9 acfffc1c  sl 00000001  fp acfffc58
+I/DEBUG   (  232):     ip 00000f2e  sp acfff788  lr b6e64869  pc b6e88488  cpsr 60000010
+I/DEBUG   (  232): 
+I/DEBUG   (  232): backtrace:
+I/DEBUG   (  232):     #00 pc 00038488  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  232):     #01 pc 00014865  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  232):     #02 pc 000155bb  /system/lib/libc.so (raise+10)
+I/DEBUG   (  232):     #03 pc 00011d25  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  232):     #04 pc 000100d8  /system/lib/libc.so (abort+4)
+I/DEBUG   (  232):     #05 pc 00001e0d  /system/lib/liblog.so (__android_log_assert+88)
+I/DEBUG   (  232):     #06 pc 00002b79  /system/lib/libstagefright_soft_vorbisdec.so (android::SoftVorbis::onQueueFilled(unsigned int)+244)
+I/DEBUG   (  232):     #07 pc 00016351  /system/lib/libstagefright_omx.so (android::SimpleSoftOMXComponent::onMessageReceived(android::sp<android::AMessage> const&)+220)
+I/DEBUG   (  232):     #08 pc 00016497  /system/lib/libstagefright_omx.so
+I/DEBUG   (  232):     #09 pc 0000b3b3  /system/lib/libstagefright_foundation.so (android::ALooperRoster::deliverMessage(android::sp<android::AMessage> const&)+166)
+I/DEBUG   (  232):     #10 pc 0000ad35  /system/lib/libstagefright_foundation.so (android::ALooper::loop()+220)
+I/DEBUG   (  232):     #11 pc 0000ef95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+112)
+I/DEBUG   (  232):     #12 pc 0000eb05  /system/lib/libutils.so
+I/DEBUG   (  232):     #13 pc 00014053  /system/lib/libc.so (__pthread_start(void*)+30)
+I/DEBUG   (  232):     #14 pc 00012083  /system/lib/libc.so (__start_thread+6)
+W/art     (  599): Long monitor contention event with owner method=int com.android.server.wm.WindowManagerService.relayoutWindow(com.android.server.wm.Session, android.view.IWindow, int, android.view.WindowManager$LayoutParams, int, int, int, int, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.graphics.Rect, android.content.res.Configuration, android.view.Surface) from WindowManagerService.java:3082 waiters=1 for 219ms
+I/Timeline(  599): Timeline: Activity_windows_visible id: ActivityRecord{24376405 u0 com.android.gallery3d/.app.MovieActivity t3687} time:35344303

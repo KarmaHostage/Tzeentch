@@ -1,0 +1,90 @@
+--------- beginning of main
+W/ResourceType(  813): No package identifier when getting value for resource number 0x00000000
+W/PackageManager(  813): Failure retrieving resources for com.android.gallery3d: Resource ID #0x0
+D/AndroidRuntime(24778): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+D/AndroidRuntime(24778): CheckJNI is OFF
+D/AndroidRuntime(24778): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+I/ActivityManager(  599): START u0 {act=android.intent.action.VIEW dat=file:///storage//sdcard0//tzeench//fuzzed.jpg typ=image/* flg=0x10000000 cmp=com.android.gallery3d/.app.GalleryActivity} from uid 2000 on display 0
+V/WindowManager(  599): addAppToken: AppWindowToken{102cbc6e token=Token{1e94f7e9 ActivityRecord{12315870 u0 com.android.gallery3d/.app.GalleryActivity t3685}}} to stack=1 task=3685 at 133
+D/AndroidRuntime(24778): Shutting down VM
+V/StateManager(24629): startState class com.android.gallery3d.app.SinglePhotoPage
+V/WindowManager(  599): Adding window Window{96c317a u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity} at 7 of 10 (after Window{1a1a6d4b u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity})
+V/WindowManager(  599): Adding window Window{a33c588 u0 SurfaceView} at 7 of 11 (before Window{96c317a u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity})
+I/ActivityManager(  599): Displayed com.android.gallery3d/.app.GalleryActivity: +171ms
+I/GLRootView(24629): onSurfaceChanged: 1080x1845, gl10: com.google.android.gles_jni.GLImpl@211992aa
+E/Sensors (  599): Acc old sensor_state 2176, new sensor_state : 2177 en : 1
+I/Timeline(24629): Timeline: Activity_idle id: android.os.BinderProxy@34f3dd4c time:32861068
+F/libc    (24629): Fatal signal 7 (SIGBUS), code 2, fault addr 0xa0741000 in tid 24684 (thread-pool-1)
+I/DEBUG   (  232): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  232): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  232): HINT: adb forward tcp:5039 tcp:5039
+I/DEBUG   (  232): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  232): Build fingerprint: 'samsung/jfltexx/jflte:5.0.1/LRX22C/I9505XXUHOB7:user/release-keys'
+I/DEBUG   (  232): Revision: '11'
+I/DEBUG   (  232): ABI: 'arm'
+I/DEBUG   (  232): pid: 24629, tid: 24684, name: thread-pool-1  >>> com.android.gallery3d <<<
+I/DEBUG   (  232): signal 7 (SIGBUS), code 2 (BUS_ADRERR), fault addr 0xa0741000
+I/DEBUG   (  232):     r0 aedc8b70  r1 a0740dd8  r2 00000400  r3 00000000
+I/DEBUG   (  232):     r4 aec2c370  r5 00000400  r6 b4b469a0  r7 aedc8e30
+I/DEBUG   (  232):     r8 66a4dca6  r9 af1e94f8  sl a0741000  fp 00000003
+I/DEBUG   (  232):     ip 00000001  sp af1e9460  lr 00000280  pc b6e740b4  cpsr 200f0030
+I/DEBUG   (  232): 
+I/DEBUG   (  232): backtrace:
+I/DEBUG   (  232):     #00 pc 000110b4  /system/lib/libc.so (__memcpy_base+219)
+I/DEBUG   (  232):     #01 pc 0000027c  <unknown>
+I/art     (  599): Background partial concurrent mark sweep GC freed 44892(1770KB) AllocSpace objects, 14(15MB) LOS objects, 28% free, 40MB/56MB, paused 2.502ms total 145.690ms
+I/Timeline(  599): Timeline: Activity_windows_visible id: ActivityRecord{12315870 u0 com.android.gallery3d/.app.GalleryActivity t3685} time:32861768
+D/lights  (  599): set_light_leds: type=0, color=0x00ffff6000, fM=0, fOnMS=0, fOffMs=0.
+D/lights  (  599): write_leds: color=0x00ff6000, delay_on=0, delay_off=0, blink="0x00ff6000 0 0".
+I/DEBUG   (  232): 
+I/DEBUG   (  232): Tombstone written to: /data/tombstones/tombstone_05
+I/BootReceiver(  599): Copying /data/tombstones/tombstone_05 to DropBox (SYSTEM_TOMBSTONE)
+W/ActivityManager(  599):   Force finishing activity 1 com.android.gallery3d/.app.GalleryActivity
+E/Sensors (  599): Acc old sensor_state 2177, new sensor_state : 2176 en : 0
+I/WindowState(  599): WIN DEATH: Window{96c317a u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/InputDispatcher(  599): channel '1a1a6d4b com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  599): channel '1a1a6d4b com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+I/WindowState(  599): WIN DEATH: Window{a33c588 u0 SurfaceView}
+W/InputDispatcher(  599): Attempted to unregister already unregistered input channel '1a1a6d4b com.android.gallery3d/com.android.gallery3d.app.GalleryActivity (server)'
+I/WindowState(  599): WIN DEATH: Window{1a1a6d4b u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  599): Force-removing child win Window{2de80841 u0 SurfaceView} from container Window{1a1a6d4b u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}
+W/WindowManager(  599): Failed looking up window
+W/WindowManager(  599): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@3d8f9328 does not exist
+W/WindowManager(  599): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8758)
+W/WindowManager(  599): 	at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8749)
+W/WindowManager(  599): 	at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(  599): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(  599): WIN DEATH: null
+I/OpenGLRenderer(  599): Initialized EGL, version 1.4
+I/Zygote  (  243): Process 24629 exited due to signal (7)
+I/ActivityManager(  599): Process com.android.gallery3d (pid 24629) has died
+V/WindowManager(  599): Adding window Window{16121064 u0 Starting com.android.gallery3d} at 5 of 11 (before Window{a33c588 u0 SurfaceView EXITING})
+I/ActivityManager(  599): Start proc 24816:com.android.gallery3d/u0a37 for activity com.android.gallery3d/.app.GalleryActivity
+W/ResourcesManager(24816): Asset path '/system/framework/com.google.android.media.effects.jar' does not exist or contains no resources.
+V/StateManager(24816): restoreFromState
+V/StateManager(24816): restoreFromState class com.android.gallery3d.app.SinglePhotoPage
+E/Gallery2/DrmHelper(24816): Could not get drm file path
+D/OpenGLRenderer(24816): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+D/Atlas   (24816): Validating map...
+V/WindowManager(  599): Adding window Window{ca0682c u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity} at 5 of 10 (before Window{16121064 u0 Starting com.android.gallery3d})
+I/Adreno-EGL(24816): <qeglDrvAPI_eglInitialize:410>: EGL 1.4 QUALCOMM build: AU_LINUX_ANDROID_LA.AF.1.1.04.04.03.164.081_msm8960_LA.AF.1.1__release_AU ()
+I/Adreno-EGL(24816): OpenGL ES Shader Compiler Version: E031.25.01.03
+I/Adreno-EGL(24816): Build Date: 11/02/14 Sun
+I/Adreno-EGL(24816): Local Branch: mybranch5454281
+I/Adreno-EGL(24816): Remote Branch: quic/l_LNX.LA.3.6
+I/Adreno-EGL(24816): Local Patches: NONE
+I/Adreno-EGL(24816): Reconstruct Branch: AU_LINUX_ANDROID_LA.AF.1.1.04.04.03.164.081 + db92d1e + cb8de02 +  NOTHING
+I/OpenGLRenderer(24816): Initialized EGL, version 1.4
+D/OpenGLRenderer(24816): Enabling debug mode 0
+V/WindowManager(  599): Adding window Window{429488a u0 SurfaceView} at 5 of 11 (before Window{ca0682c u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity})
+I/GLRootView(24816): onSurfaceChanged: 1080x1845, gl10: com.google.android.gles_jni.GLImpl@2b20ebea
+I/GLRootView(24816): layout content pane 1080x1845 (compensation 0)
+I/ActivityManager(  599): Displayed com.android.gallery3d/.app.GalleryActivity: +504ms
+I/Timeline(  599): Timeline: Activity_windows_visible id: ActivityRecord{25e21fa4 u0 com.android.gallery3d/.app.GalleryActivity t3685} time:32862657
+E/Sensors (  599): Acc old sensor_state 2176, new sensor_state : 2177 en : 1
+I/GLRootView(24816): layout content pane 1080x1845 (compensation 0)
+D/PhotoView(24816): compensation = 0, CameraRelativeFrame = Rect(0, 0 - 0, 0), mCameraRect = Rect(0, 0 - 0, 0)
+I/Timeline(24816): Timeline: Activity_idle id: android.os.BinderProxy@1dfdb5bf time:32863122
+I/art     (24816): Background sticky concurrent mark sweep GC freed 193(8KB) AllocSpace objects, 0(0B) LOS objects, 0% free, 42MB/42MB, paused 5.126ms total 14.434ms
+W/InputMethodManagerService(  599): Got RemoteException sending setActive(false) notification to pid 24629 uid 10037

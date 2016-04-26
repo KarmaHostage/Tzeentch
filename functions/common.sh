@@ -69,13 +69,15 @@ function initialize {
   add_example_file
   start_example_file
   check_gallery
+  adb shell input keyevent 4
   restarted=0
 }
 
 function fuzz {
+  c=1
   while [ 1 ] ;
   do
-      radamsa learning/$format/* > ./fuzzed/$format/fuzzed.$format
+      radamsa learning/$format/*.$format > ./fuzzed/$format/fuzzed.$format
       adb push ./fuzzed/$format/fuzzed.$format $sd_location/tzeench/fuzzed.$format
       adb shell logcat -c
       adb shell am start -a android.intent.action.VIEW -t $filetype -d file:/$encoded_sd_location//tzeench//fuzzed.$format
@@ -91,11 +93,10 @@ function fuzz {
   	    c=$(($c+1))
   	    restarted=0
       fi;
-    adb shell input keyevent 4
+    adb shell input keyevent 3
     sleep 0.2
   done
 }
 
 format="undefined"
 filetype="undefined"
-c=0

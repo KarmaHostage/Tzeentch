@@ -1,0 +1,70 @@
+--------- beginning of main
+W/OpenGLRenderer( 1188): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+W/OpenGLRenderer( 1188): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+D/AndroidRuntime(13657): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+D/AndroidRuntime(13657): CheckJNI is OFF
+D/AndroidRuntime(13657): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+I/ActivityManager(  599): START u0 {act=android.intent.action.VIEW dat=file:///storage//sdcard0//tzeench//fuzzed.webm typ=video/* flg=0x10000000 cmp=com.android.gallery3d/.app.MovieActivity} from uid 2000 on display 0
+V/WindowManager(  599): addAppToken: AppWindowToken{e71b919 token=Token{1550a060 ActivityRecord{ddf0c63 u0 com.android.gallery3d/.app.MovieActivity t3687}}} to stack=1 task=3687 at 15
+D/AndroidRuntime(13657): Shutting down VM
+D/CodeauroraVideoView( 4540): setVideoURI uri = file:///storage//sdcard0//tzeench//fuzzed.webm
+E/MediaPlayer-JNI( 4540): QCMediaPlayer mediaplayer NOT present
+E/Gallery2/DrmHelper( 4540): Could not get drm file path
+I/MediaFocusControl(  599):  AudioFocus  requestAudioFocus() from android.media.AudioManager@12f56a9b req=2flags=0x0
+V/WindowManager(  599): Adding window Window{6e53a8e u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity} at 41 of 44 (after Window{ca39bf1 u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity})
+V/WindowManager(  599): Adding window Window{36f686bc u0 SurfaceView} at 41 of 45 (before Window{6e53a8e u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity})
+E/MediaPlayer-JNI( 4540): QCMediaPlayer mediaplayer NOT present
+W/ALooperRoster(13145): failed to post message. Target handler 0 still registered, but object gone.
+D/ExtendedUtils(13145): extended extractor not needed, return default
+I/ActivityManager(  599): Displayed com.android.gallery3d/.app.MovieActivity: +273ms
+E/MediaPlayer( 4540): Should have subtitle controller already set
+D/MediaPlayer( 4540): getMetadata
+V/CodeauroraVideoView( 4540): surfaceChanged() start()
+D/NuPlayerDriver(13145): start(0xb5a801c0)
+I/GenericSource(13145): start
+I/ExtendedUtils(13145): No channel mask, try channel count
+W/ExtendedUtils(13145): No bitrate info
+I/NuPlayer(13145): Could not offload audio decode, pcm offload decided :0
+W/OMXNodeInstance(13145): [41:google.vp8.decoder] component does not support metadata mode; using fallback
+E/ACodec  (13145): [OMX.google.vp8.decoder] storeMetaDataInBuffers failed w/ err -1010
+I/ACodec  (13145): [OMX.google.vp8.decoder] DRC Mode: Port Reconfig Mode
+E/OMXNodeInstance(13145): getParameter(41:google.vp8.decoder, ParamVideoAndroidVp8Encoder(0x6f600007)) ERROR: UnsupportedIndex(0x8000101a)
+F/SoftVorbis(13145): frameworks/av/media/libstagefright/codecs/vorbis/dec/SoftVorbis.cpp:276 CHECK_EQ( 0,_vorbis_unpack_books(mVi, &bits)) failed: 0 vs. -133
+F/libc    (13145): Fatal signal 6 (SIGABRT), code -6 in tid 13685 (.vorbis.decoder)
+I/DEBUG   (  232): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  232): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  232): HINT: adb forward tcp:5039 tcp:5039
+W/MediaPlayer( 4540): info/warning (3, 0)
+I/Timeline( 4540): Timeline: Activity_idle id: android.os.BinderProxy@32361577 time:33505536
+I/DEBUG   (  232): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  232): Build fingerprint: 'samsung/jfltexx/jflte:5.0.1/LRX22C/I9505XXUHOB7:user/release-keys'
+I/DEBUG   (  232): Revision: '11'
+I/DEBUG   (  232): ABI: 'arm'
+I/DEBUG   (  232): pid: 13145, tid: 13685, name: .vorbis.decoder  >>> /system/bin/mediaserver <<<
+E/DEBUG   (  232): AM write failure (32 / Broken pipe)
+I/DEBUG   (  232): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+W/NativeCrashListener(  599): Couldn't find ProcessRecord for pid 13145
+I/DEBUG   (  232): Abort message: 'frameworks/av/media/libstagefright/codecs/vorbis/dec/SoftVorbis.cpp:276 CHECK_EQ( 0,_vorbis_unpack_books(mVi, &bits)) failed: 0 vs. -133'
+I/DEBUG   (  232):     r0 00000000  r1 00003575  r2 00000006  r3 00000000
+I/DEBUG   (  232):     r4 b05fadb8  r5 00000006  r6 00000000  r7 0000010c
+I/DEBUG   (  232):     r8 b38f6150  r9 b05fac1c  sl 00000001  fp b05fac58
+I/DEBUG   (  232):     ip 00003575  sp b05fa788  lr b6ec0869  pc b6ee4488  cpsr 60000010
+I/DEBUG   (  232): 
+I/DEBUG   (  232): backtrace:
+I/DEBUG   (  232):     #00 pc 00038488  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  232):     #01 pc 00014865  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  232):     #02 pc 000155bb  /system/lib/libc.so (raise+10)
+I/DEBUG   (  232):     #03 pc 00011d25  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  232):     #04 pc 000100d8  /system/lib/libc.so (abort+4)
+I/DEBUG   (  232):     #05 pc 00001e0d  /system/lib/liblog.so (__android_log_assert+88)
+I/DEBUG   (  232):     #06 pc 00002b79  /system/lib/libstagefright_soft_vorbisdec.so (android::SoftVorbis::onQueueFilled(unsigned int)+244)
+I/DEBUG   (  232):     #07 pc 00016351  /system/lib/libstagefright_omx.so (android::SimpleSoftOMXComponent::onMessageReceived(android::sp<android::AMessage> const&)+220)
+I/DEBUG   (  232):     #08 pc 00016497  /system/lib/libstagefright_omx.so
+I/DEBUG   (  232):     #09 pc 0000b3b3  /system/lib/libstagefright_foundation.so (android::ALooperRoster::deliverMessage(android::sp<android::AMessage> const&)+166)
+I/DEBUG   (  232):     #10 pc 0000ad35  /system/lib/libstagefright_foundation.so (android::ALooper::loop()+220)
+I/DEBUG   (  232):     #11 pc 0000ef95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+112)
+I/DEBUG   (  232):     #12 pc 0000eb05  /system/lib/libutils.so
+I/DEBUG   (  232):     #13 pc 00014053  /system/lib/libc.so (__pthread_start(void*)+30)
+I/DEBUG   (  232):     #14 pc 00012083  /system/lib/libc.so (__start_thread+6)
+I/Timeline(  599): Timeline: Activity_windows_visible id: ActivityRecord{ddf0c63 u0 com.android.gallery3d/.app.MovieActivity t3687} time:33506170

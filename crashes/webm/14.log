@@ -1,0 +1,274 @@
+--------- beginning of main
+I/Timeline(  599): Timeline: Activity_windows_visible id: ActivityRecord{23904248 u0 com.cyanogenmod.trebuchet/com.android.launcher3.Launcher t529} time:34074286
+I/MediaFocusControl(  599):  AudioFocus  abandonAudioFocus() from android.media.AudioManager@38d7605c
+D/AndroidRuntime(32172): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+D/AndroidRuntime(32172): CheckJNI is OFF
+W/OpenGLRenderer( 1188): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+W/OpenGLRenderer( 1188): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+D/AndroidRuntime(32172): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+I/ActivityManager(  599): START u0 {act=android.intent.action.VIEW dat=file:///storage//sdcard0//tzeench//fuzzed.webm typ=video/* flg=0x10000000 cmp=com.android.gallery3d/.app.MovieActivity} from uid 2000 on display 0
+V/WindowManager(  599): addAppToken: AppWindowToken{24cafb62 token=Token{1b21ca2d ActivityRecord{25e8b944 u0 com.android.gallery3d/.app.MovieActivity t3687}}} to stack=1 task=3687 at 100
+D/AndroidRuntime(32172): Shutting down VM
+D/CodeauroraVideoView( 4540): setVideoURI uri = file:///storage//sdcard0//tzeench//fuzzed.webm
+E/MediaPlayer-JNI( 4540): QCMediaPlayer mediaplayer NOT present
+E/Gallery2/DrmHelper( 4540): Could not get drm file path
+I/MediaFocusControl(  599):  AudioFocus  requestAudioFocus() from android.media.AudioManager@d80808e req=2flags=0x0
+V/WindowManager(  599): Adding window Window{3e920e3 u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity} at 278 of 281 (after Window{7521967 u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity})
+V/WindowManager(  599): Adding window Window{1e92199 u0 SurfaceView} at 278 of 282 (before Window{3e920e3 u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity})
+E/MediaPlayer-JNI( 4540): QCMediaPlayer mediaplayer NOT present
+W/ALooperRoster(30355): failed to post message. Target handler 0 still registered, but object gone.
+D/ExtendedUtils(30355): extended extractor not needed, return default
+I/ActivityManager(  599): Displayed com.android.gallery3d/.app.MovieActivity: +608ms
+E/MediaPlayer( 4540): Should have subtitle controller already set
+D/MediaPlayer( 4540): getMetadata
+V/CodeauroraVideoView( 4540): surfaceChanged() start()
+D/NuPlayerDriver(30355): start(0xb34554c0)
+I/GenericSource(30355): start
+I/ExtendedUtils(30355): No channel mask, try channel count
+W/ExtendedUtils(30355): No bitrate info
+I/NuPlayer(30355): Could not offload audio decode, pcm offload decided :0
+W/OMXNodeInstance(30355): [55:google.vp8.decoder] component does not support metadata mode; using fallback
+E/ACodec  (30355): [OMX.google.vp8.decoder] storeMetaDataInBuffers failed w/ err -1010
+I/ACodec  (30355): [OMX.google.vp8.decoder] DRC Mode: Port Reconfig Mode
+E/OMXNodeInstance(30355): getParameter(55:google.vp8.decoder, ParamVideoAndroidVp8Encoder(0x6f600007)) ERROR: UnsupportedIndex(0x8000101a)
+F/SoftVorbis(30355): frameworks/av/media/libstagefright/codecs/vorbis/dec/SoftVorbis.cpp:276 CHECK_EQ( 0,_vorbis_unpack_books(mVi, &bits)) failed: 0 vs. -133
+F/libc    (30355): Fatal signal 6 (SIGABRT), code -6 in tid 32201 (.vorbis.decoder)
+I/DEBUG   (  232): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  232): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  232): HINT: adb forward tcp:5039 tcp:5039
+I/Timeline( 4540): Timeline: Activity_idle id: android.os.BinderProxy@169d5445 time:34075478
+W/MediaPlayer( 4540): info/warning (3, 0)
+I/DEBUG   (  232): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  232): Build fingerprint: 'samsung/jfltexx/jflte:5.0.1/LRX22C/I9505XXUHOB7:user/release-keys'
+I/DEBUG   (  232): Revision: '11'
+I/DEBUG   (  232): ABI: 'arm'
+I/DEBUG   (  232): pid: 30355, tid: 32201, name: .vorbis.decoder  >>> /system/bin/mediaserver <<<
+E/DEBUG   (  232): AM write failure (32 / Broken pipe)
+I/DEBUG   (  232): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+W/NativeCrashListener(  599): Couldn't find ProcessRecord for pid 30355
+I/DEBUG   (  232): Abort message: 'frameworks/av/media/libstagefright/codecs/vorbis/dec/SoftVorbis.cpp:276 CHECK_EQ( 0,_vorbis_unpack_books(mVi, &bits)) failed: 0 vs. -133'
+I/DEBUG   (  232):     r0 00000000  r1 00007dc9  r2 00000006  r3 00000000
+I/DEBUG   (  232):     r4 b0905db8  r5 00000006  r6 00000000  r7 0000010c
+I/DEBUG   (  232):     r8 b359f970  r9 b0905c1c  sl 00000001  fp b0905c58
+I/DEBUG   (  232):     ip 00007dc9  sp b0905788  lr b6e1a869  pc b6e3e488  cpsr 60000010
+I/DEBUG   (  232): 
+I/DEBUG   (  232): backtrace:
+I/DEBUG   (  232):     #00 pc 00038488  /system/lib/libc.so (tgkill+12)
+I/DEBUG   (  232):     #01 pc 00014865  /system/lib/libc.so (pthread_kill+52)
+I/DEBUG   (  232):     #02 pc 000155bb  /system/lib/libc.so (raise+10)
+I/DEBUG   (  232):     #03 pc 00011d25  /system/lib/libc.so (__libc_android_abort+36)
+I/DEBUG   (  232):     #04 pc 000100d8  /system/lib/libc.so (abort+4)
+I/DEBUG   (  232):     #05 pc 00001e0d  /system/lib/liblog.so (__android_log_assert+88)
+I/DEBUG   (  232):     #06 pc 00002b79  /system/lib/libstagefright_soft_vorbisdec.so (android::SoftVorbis::onQueueFilled(unsigned int)+244)
+I/DEBUG   (  232):     #07 pc 00016351  /system/lib/libstagefright_omx.so (android::SimpleSoftOMXComponent::onMessageReceived(android::sp<android::AMessage> const&)+220)
+I/DEBUG   (  232):     #08 pc 00016497  /system/lib/libstagefright_omx.so
+I/DEBUG   (  232):     #09 pc 0000b3b3  /system/lib/libstagefright_foundation.so (android::ALooperRoster::deliverMessage(android::sp<android::AMessage> const&)+166)
+I/DEBUG   (  232):     #10 pc 0000ad35  /system/lib/libstagefright_foundation.so (android::ALooper::loop()+220)
+I/DEBUG   (  232):     #11 pc 0000ef95  /system/lib/libutils.so (android::Thread::_threadLoop(void*)+112)
+I/DEBUG   (  232):     #12 pc 0000eb05  /system/lib/libutils.so
+I/DEBUG   (  232):     #13 pc 00014053  /system/lib/libc.so (__pthread_start(void*)+30)
+I/DEBUG   (  232):     #14 pc 00012083  /system/lib/libc.so (__start_thread+6)
+I/Timeline(  599): Timeline: Activity_windows_visible id: ActivityRecord{25e8b944 u0 com.android.gallery3d/.app.MovieActivity t3687} time:34076036
+I/DEBUG   (  232): 
+I/DEBUG   (  232): Tombstone written to: /data/tombstones/tombstone_08
+W/AudioFlinger(30355): write blocked for 816 msecs, 1 delayed writes, thread 0xb59f9000
+W/AudioEffect( 4540): IEffect died
+E/AudioEffects-JNI( 4540): effectCallback: Client died, no need to send callback
+W/AudioSystem( 4540): AudioFlinger server died!
+W/IMediaDeathNotifier( 4540): media server died
+E/MediaPlayer( 4540): error (100, 0)
+I/ServiceManager(  216): service 'media.audio_flinger' died
+W/AudioSystem( 4540): AudioPolicyService server died!
+I/ServiceManager(  216): service 'media.player' died
+I/ServiceManager(  216): service 'media.camera' died
+I/ServiceManager(  216): service 'media.audio_policy' died
+I/ServiceManager(  216): service 'media.sound_trigger_hw' died
+W/AudioEffect( 4540): IEffect died
+E/AudioEffects-JNI( 4540): effectCallback: Client died, no need to send callback
+W/AudioSystem(  599): AudioPolicyService server died!
+W/AudioSystem(  599): AudioFlinger server died!
+I/BootReceiver(  599): Copying /data/tombstones/tombstone_08 to DropBox (SYSTEM_TOMBSTONE)
+W/IMediaDeathNotifier(  218): media server died
+E/AudioService(  599): Media server died.
+E/MediaPlayer( 4540): Error (100,0)
+D/CodeauroraVideoView( 4540): Error: 100,0
+V/WindowManager(  599): not Base app: Adding window Window{18846ad1 u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity} at 280 of 283
+I/mediaserver(32226): ServiceManager: 0xb58700c0
+I/AudioFlinger(32226): Using default 3000 mSec as standby time.
+E/MediaPlayerFactory(32226): calling dlopen on FACTORY_LIB
+E/MediaPlayerFactory(32226): calling dlsym on pFactoryLib for FACTORY_CREATE_FN 
+E/MediaPlayerFactory(32226): registering DASH Player factory...
+I/CameraService(32226): CameraService started (pid=32226)
+I/CameraService(32226): Loaded "Samsung jf Camera Wrapper" camera module
+V/CameraWrapper(32226): camera_get_number_of_cameras
+V/CameraWrapper(32226): check_vendor_module
+W/linker  (32226): libmmjpeg.so has text relocations. This is wasting memory and prevents security hardening. Please fix.
+E/QualcommCamera(32226): Qint android::get_number_of_cameras(): E
+I/QCameraHAL(32226): Handle base =0x0xb62ca09c
+I/QCameraHAL(32226): getCameraInfo: numOfCameras = 2
+I/QCameraHAL(32226): Handle [0]=0x0xb62ca09c
+I/QCameraHAL(32226): Camera sensor 0 info:
+I/QCameraHAL(32226): camera_id: 0
+I/QCameraHAL(32226): modes_supported: 1
+I/QCameraHAL(32226): position: 0
+I/QCameraHAL(32226): sensor_mount_angle: 90
+I/QCameraHAL(32226): Handle [1]=0x0xb62ca0b8
+I/QCameraHAL(32226): Camera sensor 1 info:
+I/QCameraHAL(32226): camera_id: 0
+I/QCameraHAL(32226): modes_supported: 1
+I/QCameraHAL(32226): position: 1
+I/QCameraHAL(32226): sensor_mount_angle: 270
+I/AudioPolicyService(32226): AudioPolicyService CSTOR in new mode
+I/AudioPolicyManager(32226): loadAudioPolicyConfig() loaded /system/etc/audio_policy.conf
+E/qcom_audio_hw_hal(32226): Amplifier initialization failed
+D/ALSADevice(32226): ALSA module opened
+D/AudioHardwareALSA(32226): AudioHardware: DLOPEN successful for ACDBLOADER
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_INITIALIZE
+E/        (32226): [ACDB RTC]->rtc init done!->result [0]
+E/Diag_Lib(32226): actp_diag_init: call diag init function with B407973D
+E/        (32226): [ACDB ACPH]->actp diag init done!
+D/ACDB-LOADER(32226): No existing ION info in ACDB driver
+D/ACDB-LOADER(32226): ACDB -> ION_IOC_ALLOC
+D/ACDB-LOADER(32226): ACDB -> ION_IOC_SHARE
+D/ACDB-LOADER(32226): ACDB -> MMAP ADDR
+D/ACDB-LOADER(32226): ACDB -> register MEM to ACDB driver: 0xb3dae000
+D/ACDB-LOADER(32226): ACDB -> send_asm_topology
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+D/ACDB-LOADER(32226): send mbhc data
+D/ACDB-LOADER(32226): send tabla anc data
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_ANC_SETTING
+E/ACDB-LOADER(32226): done with conversion, anc config size is 148
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_ANC_SETTING
+E/ACDB-LOADER(32226): done with conversion, anc config size is 148
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_ANC_SETTING
+E/ACDB-LOADER(32226): done with conversion, anc config size is 148
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_ANC_SETTING
+E/ACDB-LOADER(32226): done with conversion, anc config size is 148
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_ANC_SETTING
+E/ACDB-LOADER(32226): done with conversion, anc config size is 74
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_ANC_SETTING
+E/ACDB-LOADER(32226): done with conversion, anc config size is 74
+D/ACDB-LOADER(32226): ACDB -> init done!
+I/ALSADevice(32226): void android_audio_legacy::ALSADevice::setACDBHandle(void*) ACDB_handle: 0xb5701544
+D/alsa_ucm(32226): Single config file format detected
+E/AudioService(  599): Media server started.
+E/alsa_ucm(32226): EC_REF_RX mixer ctl: SLIM_RX
+E/alsa_ucm(32226): EC_REF_RX mixer ctl: SLIM_RX
+E/alsa_ucm(32226): EC_REF_RX mixer ctl: SLIM_RX
+E/alsa_ucm(32226): EC_REF_RX mixer ctl: SLIM_RX
+E/alsa_ucm(32226): EC_REF_RX mixer ctl: SLIM_RX
+D/AudioHardwareALSA(32226): AudioHardware: DLOPEN successful for CSD CLIENT
+D/        (32226): csdInitThread create successfull 0
+D/        (32226): csd_client_init: Initialized
+E/        (32226): csd_client_service_init: Invalid rx device 0, setting to handset
+I/ALSADevice(32226): void android_audio_legacy::ALSADevice::setCsdHandle(void*) csd_handle: 0xb5701934
+E/        (32226): csd_client_service_init: Invalid tx device 0, setting to handset
+D/        (32226): csd_client: qmi_client_notifier_init
+I/AudioHardwareALSA(32226): ucm instance opened: 3045521344
+D/AudioHardwareALSA(32226): Fluence dualmic feature Enabled
+I/AudioFlinger(32226): loadHwModule() Loaded primary audio interface from QCOM Audio HW HAL (audio) handle 1
+D/AudioHardwareALSA(32226): useCase HiFi
+D/ALSADevice(32226): route: devices 0x2 in mode 0
+D/ALSADevice(32226): No valid input device: 0
+D/alsa_ucm(32226): snd_use_case_set(): uc_mgr 0xb586f7c0 identifier _enadev value Speaker
+E/alsa_ucm(32226): Invalid verb_index -1
+E/alsa_ucm(32226): No valid device Speaker found
+D/ALSADevice(32226): switchDevice: mCurTxUCMDevivce None mCurRxDevDevice Speaker
+D/alsa_ucm(32226): snd_use_case_set(): uc_mgr 0xb586f7c0 identifier _verb value HiFi
+D/alsa_ucm(32226): Set mixer controls for Speaker enable 1
+D/alsa_ucm(32226): acdb_id 15 cap 1 enable 1
+D/ACDB-LOADER(32226): ACDB -> send_audio_cal, acdb_id = 15, path =  0
+D/ACDB-LOADER(32226): ACDB -> send_adm_topology
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+D/ACDB-LOADER(32226): ACDB -> send_asm_topology
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+D/ACDB-LOADER(32226): ACDB -> send_audtable
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+D/ACDB-LOADER(32226): ACDB -> AUDIO_SET_AUDPROC_CAL
+D/ACDB-LOADER(32226): ACDB -> send_audvoltable
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_VOLTBL_STEP_COPP
+E/ACDB-LOADER(32226): Error: ACDB AudProc vol returned = -8
+D/ACDB-LOADER(32226): ACDB -> AUDIO_SET_AUDPROC_VOL_CAL
+D/ACDB-LOADER(32226): ACDB -> send_afe_cal
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+D/ACDB-LOADER(32226): ACDB -> AUDIO_SET_AFE_CAL
+D/ACDB-LOADER(32226): ACDB -> send_hw_delay : acdb_id = 15 path = 0
+D/ACDB-LOADER(32226): ACDB -> ACDB_CMD_GET_DEVICE_PROPERTY_SIZE
+D/ACDB-LOADER(32226): ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+D/ACDB-LOADER(32226): send_hw_delay id = 15 delay_num_entries = 1 result = 0
+D/alsa_ucm(32226): Setting mixer control: SLIM_0_RX Channels, value: Two
+D/alsa_ucm(32226): Setting mixer control: RX5 MIX1 INP1, value: RX1
+D/alsa_ucm(32226): Setting mixer control: RX5 MIX1 INP2, value: RX2
+D/alsa_ucm(32226): Setting mixer control: RX6 DSM MUX, value: DSM_INV
+D/alsa_ucm(32226): Setting mixer control: LINEOUT2 Volume, value: 83
+D/alsa_ucm(32226): Setting mixer control: LINEOUT4 Volume, value: 83
+D/alsa_ucm(32226): Setting multi value: RX5 Digital Volume
+D/alsa_ucm(32226): Set mixer controls for HiFi enable 1
+D/alsa_ucm(32226): Setting mixer control: SLIMBUS_0_RX Audio Mixer MultiMedia1, value: 1
+D/ALSADevice(32226): close: handle 0xb587a680 h 0x0
+D/ALSADevice(32226): open: handle 0xb587a680, format 0x2
+D/ALSADevice(32226): Device value returned is hw:0,0
+D/ALSADevice(32226): handle->format: 0x2
+D/ALSADevice(32226): setHardwareParams: reqBuffSize 2048 channels 2 sampleRate 48000
+D/ALSADevice(32226): setHardwareParams: buffer_size 16384, period_size 2048, period_cnt 8
+I/AudioFlinger(32226): HAL output buffer size 512 frames, normal sink buffer size 1024 frames
+W/EffectsFactory(32226): loadLibrary() failed to open /system/vendor/lib/soundfx/libswdap.so
+W/EffectsFactory(32226): loadEffect() could not get library ds
+I/AudioMixer(32226): found effect "Multichannel Downmix To Stereo" from The Android Open Source Project
+E/MonoPipe(32226): Failed to fetch local time frequency when constructing a MonoPipe (res = -32).  getNextWriteTimestamp calls will be non-functional
+I/AudioFlinger(32226): AudioFlinger's thread 0xb59f9000 ready to run
+I/AudioFlinger(32226): Using module 1 has the primary audio interface
+D/ALSADevice(32226): standby: handle 0xb587a680 h 0x0
+D/alsa_ucm(32226): snd_use_case_set(): uc_mgr 0xb586f7c0 identifier _verb value Inactive
+D/alsa_ucm(32226): Set mixer controls for HiFi enable 0
+D/alsa_ucm(32226): Setting mixer control: SLIMBUS_0_RX Audio Mixer MultiMedia1, value: 0
+D/alsa_ucm(32226): snd_use_case_set(): uc_mgr 0xb586f7c0 identifier _disdev value Speaker
+D/alsa_ucm(32226): Set mixer controls for Speaker enable 0
+D/alsa_ucm(32226): Setting mixer control: RX5 MIX1 INP1, value: ZERO
+D/alsa_ucm(32226): Setting mixer control: RX5 MIX1 INP2, value: ZERO
+D/alsa_ucm(32226): Setting mixer control: LINEOUT2 Volume, value: 0
+D/alsa_ucm(32226): Setting mixer control: LINEOUT4 Volume, value: 0
+D/alsa_ucm(32226): Setting mixer control: RX5 Digital Volume, value: 0
+D/AudioUsbALSA(32226): exitPlaybackThread, mproxypfdPlayback: -1
+D/AudioUsbALSA(32226): closeDevice handle 0x0
+D/AudioUsbALSA(32226): closeDevice handle 0x0
+D/ALSAStreamOps(32226): setParameters(): keyRouting with device 0x2
+D/ALSAStreamOps(32226): setParameters(): keyRouting with device 0x2
+D/ALSADevice(32226): route: devices 0x2 in mode 0
+D/ALSADevice(32226): No valid input device: 0
+D/alsa_ucm(32226): snd_use_case_set(): uc_mgr 0xb586f7c0 identifier _enadev value Speaker
+D/ALSADevice(32226): switchDevice: mCurTxUCMDevivce None mCurRxDevDevice Speaker
+D/ALSADevice(32226): setVoipVolume: volume 100
+D/ALSADevice(32226): setMixerControl:: name Voip Rx Volume value 100 index 0
+D/AudioHardwareALSA(32226): openInputStream: devices 0x400000 format 0x1 channels 49168 sampleRate 48000
+I/AudioFlinger(32226): AudioFlinger's thread 0xb5a86000 ready to run
+D/AudioStreamInALSA(32226): close
+D/AudioStreamInALSA(32226): Deregistering REC bit, musbRecordingState:0
+D/AudioStreamInALSA(32226): close
+D/AudioHardwareALSA(32226): Closing USB Recording Session as no stream is active
+D/AudioUsbALSA(32226): exitRecordingThread
+D/AudioUsbALSA(32226): write to fd
+D/AudioUsbALSA(32226): closeDevice handle 0x0
+D/AudioUsbALSA(32226): closeDevice handle 0x0
+D/ALSAStreamOps(32226): close
+D/ALSAStreamOps(32226): close() : Found mHandle 0xb587a700, proceeding to close
+D/ALSADevice(32226): close: handle 0xb587a700 h 0x0
+D/ALSAStreamOps(32226): close
+D/ALSAStreamOps(32226): close() : Found mHandle 0xb587a700, proceeding to close
+D/ALSADevice(32226): close: handle 0xb587a700 h 0x0
+I/r_submix(32226): adev_open(name=audio_hw_if)
+I/r_submix(32226): adev_init_check()
+I/AudioFlinger(32226): loadHwModule() Loaded r_submix audio interface from Wifi Display audio HAL (audio) handle 5
+D/r_submix(32226): adev_open_input_stream(addr=0)
+D/r_submix(32226): submix_audio_device_create_pipe_l(addr=0, idx=9)
+D/r_submix(32226):   now using address 0 for route 9
+I/AudioFlinger(32226): AudioFlinger's thread 0xb5aaf000 ready to run
+D/r_submix(32226): adev_close_input_stream()
+D/r_submix(32226): submix_audio_device_release_pipe_l(idx=9) addr=0
+D/r_submix(32226): submix_audio_device_destroy_pipe_l(): pipe destroyed
+E/SoundTriggerHwService(32226): couldn't load sound trigger module sound_trigger.primary (No such file or directory)
+D/AudioPolicyManager(32226): setPhoneState() state 0
+W/AudioPolicyManager(32226): setPhoneState() setting same state 0
+D/ALSADevice(32226): setVoipVolume: volume 20
+D/ALSADevice(32226): setMixerControl:: name Voip Rx Volume value 20 index 0

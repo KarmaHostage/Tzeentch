@@ -1,0 +1,876 @@
+--------- beginning of main
+E/alsa_ucm(24791): EC_REF_RX mixer ctl: SLIM_RX
+E/alsa_ucm(24791): EC_REF_RX mixer ctl: SLIM_RX
+E/AudioService(  599): Media server started.
+E/alsa_ucm(24791): EC_REF_RX mixer ctl: SLIM_RX
+D/lights  (  599): set_light_leds: type=0, color=0x00ffff6000, fM=0, fOnMS=0, fOffMs=0.
+D/lights  (  599): write_leds: color=0x00ff6000, delay_on=0, delay_off=0, blink="0x00ff6000 0 0".
+D/AudioHardwareALSA(24791): AudioHardware: DLOPEN successful for CSD CLIENT
+D/        (24791): csdInitThread create successfull 0
+E/        (24791): csd_client_service_init: Invalid rx device 0, setting to handset
+E/        (24791): csd_client_service_init: Invalid tx device 0, setting to handset
+D/        (24791): csd_client: qmi_client_notifier_init
+D/        (24791): csd_client_init: Initialized
+I/ALSADevice(24791): void android_audio_legacy::ALSADevice::setCsdHandle(void*) csd_handle: 0xb410a934
+I/AudioHardwareALSA(24791): ucm instance opened: 3045521344
+D/AudioHardwareALSA(24791): Fluence dualmic feature Enabled
+I/AudioFlinger(24791): loadHwModule() Loaded primary audio interface from QCOM Audio HW HAL (audio) handle 1
+D/AudioHardwareALSA(24791): useCase HiFi
+D/ALSADevice(24791): route: devices 0x2 in mode 0
+D/ALSADevice(24791): No valid input device: 0
+D/alsa_ucm(24791): snd_use_case_set(): uc_mgr 0xb586f7c0 identifier _enadev value Speaker
+E/alsa_ucm(24791): Invalid verb_index -1
+E/alsa_ucm(24791): No valid device Speaker found
+D/ALSADevice(24791): switchDevice: mCurTxUCMDevivce None mCurRxDevDevice Speaker
+D/alsa_ucm(24791): snd_use_case_set(): uc_mgr 0xb586f7c0 identifier _verb value HiFi
+D/alsa_ucm(24791): Set mixer controls for Speaker enable 1
+D/alsa_ucm(24791): acdb_id 15 cap 1 enable 1
+D/ACDB-LOADER(24791): ACDB -> send_audio_cal, acdb_id = 15, path =  0
+D/ACDB-LOADER(24791): ACDB -> send_adm_topology
+D/ACDB-LOADER(24791): ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TOPOLOGY_ID
+D/ACDB-LOADER(24791): ACDB -> send_asm_topology
+D/ACDB-LOADER(24791): ACDB -> ACDB_CMD_GET_AUDPROC_STREAM_TOPOLOGY_ID
+D/ACDB-LOADER(24791): ACDB -> send_audtable
+D/ACDB-LOADER(24791): ACDB -> ACDB_CMD_GET_AUDPROC_COMMON_TABLE
+D/ACDB-LOADER(24791): ACDB -> AUDIO_SET_AUDPROC_CAL
+D/ACDB-LOADER(24791): ACDB -> send_audvoltable
+D/ACDB-LOADER(24791): ACDB -> ACDB_CMD_GET_AUDPROC_GAIN_DEP_VOLTBL_STEP_COPP
+E/ACDB-LOADER(24791): Error: ACDB AudProc vol returned = -8
+D/ACDB-LOADER(24791): ACDB -> AUDIO_SET_AUDPROC_VOL_CAL
+D/ACDB-LOADER(24791): ACDB -> send_afe_cal
+D/ACDB-LOADER(24791): ACDB -> ACDB_CMD_GET_AFE_COMMON_TABLE
+D/ACDB-LOADER(24791): ACDB -> AUDIO_SET_AFE_CAL
+D/ACDB-LOADER(24791): ACDB -> send_hw_delay : acdb_id = 15 path = 0
+D/ACDB-LOADER(24791): ACDB -> ACDB_CMD_GET_DEVICE_PROPERTY_SIZE
+D/ACDB-LOADER(24791): ACDB -> ACDB_AVSYNC_INFO: ACDB_CMD_GET_DEVICE_PROPERTY
+D/ACDB-LOADER(24791): send_hw_delay id = 15 delay_num_entries = 1 result = 0
+D/alsa_ucm(24791): Setting mixer control: SLIM_0_RX Channels, value: Two
+D/alsa_ucm(24791): Setting mixer control: RX5 MIX1 INP1, value: RX1
+D/alsa_ucm(24791): Setting mixer control: RX5 MIX1 INP2, value: RX2
+D/alsa_ucm(24791): Setting mixer control: RX6 DSM MUX, value: DSM_INV
+D/alsa_ucm(24791): Setting mixer control: LINEOUT2 Volume, value: 83
+D/alsa_ucm(24791): Setting mixer control: LINEOUT4 Volume, value: 83
+D/alsa_ucm(24791): Setting multi value: RX5 Digital Volume
+D/alsa_ucm(24791): Set mixer controls for HiFi enable 1
+D/alsa_ucm(24791): Setting mixer control: SLIMBUS_0_RX Audio Mixer MultiMedia1, value: 1
+D/ALSADevice(24791): close: handle 0xb587a680 h 0x0
+D/ALSADevice(24791): open: handle 0xb587a680, format 0x2
+D/ALSADevice(24791): Device value returned is hw:0,0
+D/ALSADevice(24791): handle->format: 0x2
+D/ALSADevice(24791): setHardwareParams: reqBuffSize 2048 channels 2 sampleRate 48000
+D/ALSADevice(24791): setHardwareParams: buffer_size 16384, period_size 2048, period_cnt 8
+I/AudioFlinger(24791): HAL output buffer size 512 frames, normal sink buffer size 1024 frames
+W/EffectsFactory(24791): loadLibrary() failed to open /system/vendor/lib/soundfx/libswdap.so
+W/EffectsFactory(24791): loadEffect() could not get library ds
+I/AudioMixer(24791): found effect "Multichannel Downmix To Stereo" from The Android Open Source Project
+E/MonoPipe(24791): Failed to fetch local time frequency when constructing a MonoPipe (res = -32).  getNextWriteTimestamp calls will be non-functional
+I/AudioFlinger(24791): Using module 1 has the primary audio interface
+I/AudioFlinger(24791): AudioFlinger's thread 0xb59f9000 ready to run
+D/ALSAStreamOps(24791): setParameters(): keyRouting with device 0x2
+D/ALSAStreamOps(24791): setParameters(): keyRouting with device 0x2
+D/ALSADevice(24791): route: devices 0x2 in mode 0
+D/ALSADevice(24791): No valid input device: 0
+D/alsa_ucm(24791): snd_use_case_set(): uc_mgr 0xb586f7c0 identifier _enadev value Speaker
+D/alsa_ucm(24791): Set mixer controls for HiFi enable 1
+D/alsa_ucm(24791): Setting mixer control: SLIMBUS_0_RX Audio Mixer MultiMedia1, value: 1
+D/ALSADevice(24791): switchDevice: mCurTxUCMDevivce None mCurRxDevDevice Speaker
+D/ALSADevice(24791): standby: handle 0xb587a680 h 0x0
+D/alsa_ucm(24791): snd_use_case_set(): uc_mgr 0xb586f7c0 identifier _verb value Inactive
+D/alsa_ucm(24791): Set mixer controls for HiFi enable 0
+D/alsa_ucm(24791): Setting mixer control: SLIMBUS_0_RX Audio Mixer MultiMedia1, value: 0
+D/alsa_ucm(24791): snd_use_case_set(): uc_mgr 0xb586f7c0 identifier _disdev value Speaker
+D/alsa_ucm(24791): Set mixer controls for Speaker enable 0
+D/alsa_ucm(24791): Setting mixer control: RX5 MIX1 INP1, value: ZERO
+D/alsa_ucm(24791): Setting mixer control: RX5 MIX1 INP2, value: ZERO
+D/alsa_ucm(24791): Setting mixer control: LINEOUT2 Volume, value: 0
+D/alsa_ucm(24791): Setting mixer control: LINEOUT4 Volume, value: 0
+D/alsa_ucm(24791): Setting mixer control: RX5 Digital Volume, value: 0
+D/AudioUsbALSA(24791): exitPlaybackThread, mproxypfdPlayback: -1
+D/AudioUsbALSA(24791): closeDevice handle 0x0
+D/AudioUsbALSA(24791): closeDevice handle 0x0
+D/ALSADevice(24791): setVoipVolume: volume 100
+D/ALSADevice(24791): setMixerControl:: name Voip Rx Volume value 100 index 0
+D/AudioHardwareALSA(24791): openInputStream: devices 0x400000 format 0x1 channels 49168 sampleRate 48000
+I/AudioFlinger(24791): AudioFlinger's thread 0xb5a86000 ready to run
+D/AudioStreamInALSA(24791): close
+D/AudioStreamInALSA(24791): Deregistering REC bit, musbRecordingState:0
+D/AudioStreamInALSA(24791): close
+D/AudioHardwareALSA(24791): Closing USB Recording Session as no stream is active
+D/AudioUsbALSA(24791): exitRecordingThread
+D/AudioUsbALSA(24791): write to fd
+D/AudioUsbALSA(24791): closeDevice handle 0x0
+D/AudioUsbALSA(24791): closeDevice handle 0x0
+D/ALSAStreamOps(24791): close
+D/ALSAStreamOps(24791): close() : Found mHandle 0xb587a700, proceeding to close
+D/ALSADevice(24791): close: handle 0xb587a700 h 0x0
+D/ALSAStreamOps(24791): close
+D/ALSAStreamOps(24791): close() : Found mHandle 0xb587a700, proceeding to close
+D/ALSADevice(24791): close: handle 0xb587a700 h 0x0
+I/r_submix(24791): adev_open(name=audio_hw_if)
+I/r_submix(24791): adev_init_check()
+I/AudioFlinger(24791): loadHwModule() Loaded r_submix audio interface from Wifi Display audio HAL (audio) handle 5
+D/r_submix(24791): adev_open_input_stream(addr=0)
+D/r_submix(24791): submix_audio_device_create_pipe_l(addr=0, idx=9)
+D/r_submix(24791):   now using address 0 for route 9
+I/AudioFlinger(24791): AudioFlinger's thread 0xb5aaf000 ready to run
+D/r_submix(24791): adev_close_input_stream()
+D/r_submix(24791): submix_audio_device_release_pipe_l(idx=9) addr=0
+D/r_submix(24791): submix_audio_device_destroy_pipe_l(): pipe destroyed
+E/SoundTriggerHwService(24791): couldn't load sound trigger module sound_trigger.primary (No such file or directory)
+D/AudioPolicyManager(24791): setPhoneState() state 0
+W/AudioPolicyManager(24791): setPhoneState() setting same state 0
+D/ALSADevice(24791): setVoipVolume: volume 20
+D/ALSADevice(24791): setMixerControl:: name Voip Rx Volume value 20 index 0
+I/Timeline( 1188): Timeline: Activity_idle id: android.os.BinderProxy@8504708 time:33830191
+D/AndroidRuntime(24809): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+D/AndroidRuntime(24809): CheckJNI is OFF
+D/AndroidRuntime(24809): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+I/ActivityManager(  599): START u0 {act=android.intent.action.VIEW dat=file:///storage//sdcard0//tzeench//fuzzed.webm typ=video/* flg=0x10000000 cmp=com.android.gallery3d/.app.MovieActivity} from uid 2000 on display 0
+D/AndroidRuntime(24809): Shutting down VM
+V/WindowManager(  599): addAppToken: AppWindowToken{27f0bf29 token=Token{8eb4b0 ActivityRecord{27d27ff3 u0 com.android.gallery3d/.app.MovieActivity t3687}}} to stack=1 task=3687 at 65
+W/AudioFlinger(24791): session id 96 not found for pid 4540
+I/Timeline(  599): Timeline: Activity_windows_visible id: ActivityRecord{23904248 u0 com.cyanogenmod.trebuchet/com.android.launcher3.Launcher t529} time:33830540
+D/CodeauroraVideoView( 4540): setVideoURI uri = file:///storage//sdcard0//tzeench//fuzzed.webm
+E/MediaPlayer-JNI( 4540): QCMediaPlayer mediaplayer NOT present
+E/Gallery2/DrmHelper( 4540): Could not get drm file path
+I/MediaFocusControl(  599):  AudioFocus  requestAudioFocus() from android.media.AudioManager@b278b3f req=2flags=0x0
+V/WindowManager(  599): Adding window Window{1f62835e u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity} at 182 of 185 (after Window{3f38b2 u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity})
+F/libc    (24809): Fatal signal 11 (SIGSEGV), code 1, fault addr 0xb459e710 in tid 24832 (Binder_2)
+I/DEBUG   (  232): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  232): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  232): HINT: adb forward tcp:5039 tcp:5039
+E/DEBUG   (  232): unexpected waitpid response: n=24832, status=00000000
+E/DEBUG   (  232): tid exited before attach completed: tid 24832
+V/WindowManager(  599): Adding window Window{13c6840c u0 SurfaceView} at 182 of 186 (before Window{1f62835e u0 com.android.gallery3d/com.android.gallery3d.app.MovieActivity})
+E/MediaPlayer-JNI( 4540): QCMediaPlayer mediaplayer NOT present
+W/ALooperRoster(24791): failed to post message. Target handler 0 still registered, but object gone.
+D/ExtendedUtils(24791): extended extractor not needed, return default
+I/ActivityManager(  599): Displayed com.android.gallery3d/.app.MovieActivity: +754ms
+E/MediaPlayer( 4540): Should have subtitle controller already set
+D/MediaPlayer( 4540): getMetadata
+V/CodeauroraVideoView( 4540): surfaceChanged() start()
+D/NuPlayerDriver(24791): start(0xb344c1c0)
+I/GenericSource(24791): start
+I/ExtendedUtils(24791): No channel mask, try channel count
+W/ExtendedUtils(24791): No bitrate info
+I/NuPlayer(24791): Could not offload audio decode, pcm offload decided :0
+E/OMXMaster(24791): A component of name 'OMX.ffmpeg.wmv.decoder' already exists, ignoring this one.
+I/Timeline( 4540): Timeline: Activity_idle id: android.os.BinderProxy@11fedf6a time:33831404
+E/QC_EVRCENC(24791):  component init: role = OMX.qcom.audio.encoder.evrc
+I/QC_EVRCENC(24791):  component init: role = OMX.qcom.audio.encoder.evrc
+I/QC_EVRCENC(24791): 
+I/QC_EVRCENC(24791): component_init: Component OMX.qcom.audio.encoder.evrc LOADED 
+I/QC_EVRCENC(24791): Driver in Non Tunnel mode open
+I/QC_EVRCENC(24791): Returning the state 1
+I/QC_EVRCENC(24791): Returning the state 1
+I/QC_EVRCENC(24791): Component-deinit being processed
+I/QC_EVRCENC(24791): ********************************
+I/QC_EVRCENC(24791): STATS: in-buf-len[0]out-buf-len[0] tot-pb-time[0]
+I/QC_EVRCENC(24791): STATS: fbd-cnt[0]ftb-cnt[0]etb-cnt[0]ebd-cnt[0]
+I/QC_EVRCENC(24791): ************************************
+I/QC_EVRCENC(24791):  DEINIT COMPLETED
+I/QC_EVRCENC(24791): ************************************
+E/QC_EVRCENC(24791): component_deinit:COMPONENT DEINIT...
+E/QC_EVRCENC(24791): EVRC Object getting destroyed comp-deinit=1
+E/QC_EVRCENC(24791): OMX EVRC component destroyed
+E/QC_QCELP13ENC(24791):  component init: role = OMX.qcom.audio.encoder.qcelp13
+I/QC_QCELP13ENC(24791):  component init: role = OMX.qcom.audio.encoder.qcelp13
+I/QC_QCELP13ENC(24791): 
+I/QC_QCELP13ENC(24791): component_init: Component OMX.qcom.audio.encoder.qcelp13 LOADED 
+I/QC_QCELP13ENC(24791): Driver in Non Tunnel mode open
+I/QC_QCELP13ENC(24791): Returning the state 1
+I/QC_QCELP13ENC(24791): Returning the state 1
+I/QC_QCELP13ENC(24791): Component-deinit being processed
+I/QC_QCELP13ENC(24791): ********************************
+I/QC_QCELP13ENC(24791): STATS: in-buf-len[0]out-buf-len[0] tot-pb-time[0]
+I/QC_QCELP13ENC(24791): STATS: fbd-cnt[0]ftb-cnt[0]etb-cnt[0]ebd-cnt[0]
+I/QC_QCELP13ENC(24791): ************************************
+I/QC_QCELP13ENC(24791):  DEINIT COMPLETED
+I/QC_QCELP13ENC(24791): ************************************
+E/QC_QCELP13ENC(24791): component_deinit:COMPONENT DEINIT...
+E/QC_QCELP13ENC(24791): QCELP13 Object getting destroyed comp-deinit=1
+E/QC_QCELP13ENC(24791): OMX QCELP13 component destroyed
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  omx_video(): Inside Constructor()
+E/OMX-VENC-720p(24791): Successfully opened venc ion device fd = 34
+E/OMX-VENC-720p(24791): Successfully created venc ionlock
+E/OMX-VENC-720p(24791): Venc instance = 1, ion device fd = 34
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  omx_venc(): Inside component_init()
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  Is component secure 0
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  bool venc_dev::venc_open(OMX_U32)(): Init Profile/Level setting success
+E/OMX-VENC-720p(24791): get_curr_perf_lvl = 0
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  Component_init return value = 0x0
+E/OMX-VENC-720p(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported for Input port returned Profile:1, Level:128
+E/OMX-VENC-720p(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported for Input port returned Profile:32768, Level:128
+E/OMX-VENC-720p(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported nProfileIndex ret NoMore 2
+E/OMX-VENC-720p(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported for Input port returned Profile:32768, Level:128
+E/OMX-VENC-720p(24791): Invalid entry returned from get_supported_profile_level 32768, 128
+W/ACodec  (24791): do not know color format 0x7fa30c06 = 2141391878
+W/ACodec  (24791): do not know color format 0x7f000789 = 2130708361
+W/ACodec  (24791): do not know color format 0xb3454274 = -1287306636
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  omx_venc(): Inside component_deinit()
+E/OMX-VENC-720p(24791): Calling m_heap_ptr.clear()
+E/OMX-VENC-720p(24791): Calling venc_close()
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  venc_close(): Calling VEN_IOCTL_CMD_STOP_READ_MSG
+E/OMX-VENC-720p(24791): Deleting HANDLE[0xb5881c00]
+E/OMX-VENC-720p(24791): OMX_Venc:Component Deinit
+E/OMX-VENC-720p(24791): In OMX Venc Destructor() for instance = 1
+E/OMX-VENC-720p(24791): omx_video: Waiting on Msg Thread exit
+E/OMX-VENC-720p(24791): omx_video: Waiting on Async Thread exit
+E/OMX-VENC-720p(24791): omx_venc: Async Thread exit
+E/OMX-VENC-720p(24791): Calling close() on venc ion device fd = 34
+E/OMX-VENC-720p(24791): Successfully destroyed venc ionlock
+E/OMX-VENC-720p(24791): m_etb_count = 0, m_fbd_count = 0
+E/OMX-VENC-720p(24791): Exiting OMX Video Encoder ...
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  Destroy C2D instance
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  omx_video(): Inside Constructor()
+E/OMX-VENC-720p(24791): Successfully opened venc ion device fd = 34
+E/OMX-VENC-720p(24791): Successfully created venc ionlock
+E/OMX-VENC-720p(24791): Venc instance = 1, ion device fd = 34
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  omx_venc(): Inside component_init()
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  Is component secure 0
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  bool venc_dev::venc_open(OMX_U32)(): Init Profile/Level setting success
+E/OMX-VENC-720p(24791): get_curr_perf_lvl = 0
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  Component_init return value = 0x0
+E/OMX-VENC-720p(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported for Input port returned Profile:1, Level:128
+E/OMX-VENC-720p(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported nProfileIndex ret NoMore 1
+E/OMX-VENC-720p(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported for Input port returned Profile:1, Level:128
+E/OMX-VENC-720p(24791): Invalid entry returned from get_supported_profile_level 1, 128
+W/ACodec  (24791): do not know color format 0x7fa30c06 = 2141391878
+W/ACodec  (24791): do not know color format 0x7f000789 = 2130708361
+W/ACodec  (24791): do not know color format 0xb3454274 = -1287306636
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  omx_venc(): Inside component_deinit()
+E/OMX-VENC-720p(24791): Calling m_heap_ptr.clear()
+E/OMX-VENC-720p(24791): Calling venc_close()
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  venc_close(): Calling VEN_IOCTL_CMD_STOP_READ_MSG
+E/OMX-VENC-720p(24791): Deleting HANDLE[0xb5881c00]
+E/OMX-VENC-720p(24791): OMX_Venc:Component Deinit
+E/OMX-VENC-720p(24791): In OMX Venc Destructor() for instance = 1
+E/OMX-VENC-720p(24791): omx_video: Waiting on Msg Thread exit
+E/OMX-VENC-720p(24791): omx_video: Waiting on Async Thread exit
+E/OMX-VENC-720p(24791): omx_venc: Async Thread exit
+E/OMX-VENC-720p(24791): Calling close() on venc ion device fd = 34
+E/OMX-VENC-720p(24791): Successfully destroyed venc ionlock
+E/OMX-VENC-720p(24791): m_etb_count = 0, m_fbd_count = 0
+E/OMX-VENC-720p(24791): Exiting OMX Video Encoder ...
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  Destroy C2D instance
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  omx_video(): Inside Constructor()
+E/OMX-VENC-720p(24791): Successfully opened venc ion device fd = 34
+E/OMX-VENC-720p(24791): Successfully created venc ionlock
+E/OMX-VENC-720p(24791): Venc instance = 1, ion device fd = 34
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  omx_venc(): Inside component_init()
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  Is component secure 0
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  bool venc_dev::venc_open(OMX_U32)(): Init Profile/Level setting success
+E/OMX-VENC-720p(24791): get_curr_perf_lvl = 0
+E/OMX-VENC-720p(24791): Set bistream_restrict in vui: 1
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  Component_init return value = 0x0
+E/OMX-VENC-720p(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported for Input port returned Profile:1, Level:2048
+E/OMX-VENC-720p(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported for Input port returned Profile:2, Level:2048
+E/OMX-VENC-720p(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported for Input port returned Profile:8, Level:2048
+E/OMX-VENC-720p(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported for Input port returned Profile:8, Level:2048
+E/OMX-VENC-720p(24791): Invalid entry returned from get_supported_profile_level 8, 2048
+W/ACodec  (24791): do not know color format 0x7fa30c06 = 2141391878
+W/ACodec  (24791): do not know color format 0x7f000789 = 2130708361
+W/ACodec  (24791): do not know color format 0xb3454274 = -1287306636
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  omx_venc(): Inside component_deinit()
+E/OMX-VENC-720p(24791): Calling m_heap_ptr.clear()
+E/OMX-VENC-720p(24791): Calling venc_close()
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  venc_close(): Calling VEN_IOCTL_CMD_STOP_READ_MSG
+E/OMX-VENC-720p(24791): Deleting HANDLE[0xb5881c00]
+E/OMX-VENC-720p(24791): OMX_Venc:Component Deinit
+E/OMX-VENC-720p(24791): In OMX Venc Destructor() for instance = 1
+E/OMX-VENC-720p(24791): omx_video: Waiting on Msg Thread exit
+E/OMX-VENC-720p(24791): omx_video: Waiting on Async Thread exit
+E/OMX-VENC-720p(24791): omx_venc: Async Thread exit
+E/OMX-VENC-720p(24791): Calling close() on venc ion device fd = 34
+E/OMX-VENC-720p(24791): Successfully destroyed venc ionlock
+E/OMX-VENC-720p(24791): m_etb_count = 0, m_fbd_count = 0
+E/OMX-VENC-720p(24791): Exiting OMX Video Encoder ...
+E/OMX-VENC-720p(24791): 
+E/OMX-VENC-720p(24791):  Destroy C2D instance
+E/OMX     (24791): FAILED to allocate omx component 'OMX.qcom.audio.decoder.wma'
+E/OMX     (24791): FAILED to allocate omx component 'OMX.qcom.audio.decoder.wmaLossLess'
+E/OMX     (24791): FAILED to allocate omx component 'OMX.qcom.audio.decoder.wma10Pro'
+E/OMX     (24791): FAILED to allocate omx component 'OMX.qcom.audio.decoder.amrwbplus'
+E/OMX     (24791): FAILED to allocate omx component 'OMX.qcom.audio.decoder.Qcelp13'
+E/OMX     (24791): FAILED to allocate omx component 'OMX.qcom.audio.decoder.evrc'
+E/OMX-VDEC-1080P(24791): In OMX vdec Constructor
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.ts value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.concealedmb value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.extradata value is 0
+E/OMX-VDEC-1080P(24791): Successfully opened vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully created vdec ionlock
+E/OMX-VDEC-1080P(24791): Vdec instances = 1, ion device fd = 34
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Start of New Playback : role  = OMX.qcom.video.decoder.vc1 : DEVICE = /dev/msm_vidc_dec
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Open returned fd 35, errno 2
+E/OMX-VDEC-1080P(24791): component_init: current performance level = 0 
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread start
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init() success
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread start
+E/OMX-VDEC-1080P(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported ret NoMore
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (0), eCompressionFormat (0x0), eColorFormat (0x7fa30c03), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+W/ACodec  (24791): do not know color format 0x7fa30c03 = 2141391875
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (1), eCompressionFormat (0x0), eColorFormat (0x15), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (2), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (3), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.storeMetaDataInBuffers not implemented
+E/OMXNodeInstance(24791): getExtensionIndex(14:qcom.decoder.vc1, OMX.google.android.index.storeMetaDataInBuffers) ERROR: NotImplemented(0x80001006)
+E/OMX-VDEC-1080P(24791): set_parameter: OMX_GoogleAndroidIndexPrepareForAdaptivePlayback
+E/OMX-VDEC-1080P(24791): Enabling Adaptive playback for 1280 x 720
+E/OMX-VDEC-1080P(24791): Playback Ended - PASSED
+E/OMX-VDEC-1080P(24791): ALL output buffers are freed/released
+E/OMX-VDEC-1080P(24791): Calling VDEC_IOCTL_STOP_NEXT_MSG
+E/OMX-VDEC-1080P(24791): omx_vdec::component_deinit() complete
+E/OMX-VDEC-1080P(24791): In OMX Vdec Destructor(), Vdec instances = 1
+E/OMX-VDEC-1080P(24791): 
+E/OMX-VDEC-1080P(24791):  Error in ioctl read next msg
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Msg Thread exit
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Async Thread exit
+E/OMX-VDEC-1080P(24791): Calling close() on Video Driver
+E/OMX-VDEC-1080P(24791): Calling close() on vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully destroyed vdec ionlock
+E/OMX-VDEC-1080P(24791): Exit OMX vdec Destructor
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/OMX-VDEC-1080P(24791): In OMX vdec Constructor
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.ts value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.concealedmb value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.extradata value is 0
+E/OMX-VDEC-1080P(24791): Successfully opened vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully created vdec ionlock
+E/OMX-VDEC-1080P(24791): Vdec instances = 1, ion device fd = 34
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Start of New Playback : role  = OMX.qcom.video.decoder.divx : DEVICE = /dev/msm_vidc_dec
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Open returned fd 35, errno 0
+E/OMX-VDEC-1080P(24791): component_init: current performance level = 0 
+E/OMX-VDEC-1080P(24791): DIVX 5/6 Decoder selected
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init() success
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread start
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread start
+E/OMX-VDEC-1080P(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported ret NoMore
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (0), eCompressionFormat (0x0), eColorFormat (0x7fa30c03), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+W/ACodec  (24791): do not know color format 0x7fa30c03 = 2141391875
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (1), eCompressionFormat (0x0), eColorFormat (0x15), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (2), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (3), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.storeMetaDataInBuffers not implemented
+E/OMXNodeInstance(24791): getExtensionIndex(15:qcom.decoder.divx, OMX.google.android.index.storeMetaDataInBuffers) ERROR: NotImplemented(0x80001006)
+E/OMX-VDEC-1080P(24791): set_parameter: OMX_GoogleAndroidIndexPrepareForAdaptivePlayback
+E/OMX-VDEC-1080P(24791): Enabling Adaptive playback for 1280 x 720
+E/OMX-VDEC-1080P(24791): Playback Ended - PASSED
+E/OMX-VDEC-1080P(24791): ALL output buffers are freed/released
+E/OMX-VDEC-1080P(24791): Calling VDEC_IOCTL_STOP_NEXT_MSG
+E/OMX-VDEC-1080P(24791): omx_vdec::component_deinit() complete
+E/OMX-VDEC-1080P(24791): In OMX Vdec Destructor(), Vdec instances = 1
+E/OMX-VDEC-1080P(24791): 
+E/OMX-VDEC-1080P(24791):  Error in ioctl read next msg
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Msg Thread exit
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Async Thread exit
+E/OMX-VDEC-1080P(24791): Calling close() on Video Driver
+E/OMX-VDEC-1080P(24791): Calling close() on vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully destroyed vdec ionlock
+E/OMX-VDEC-1080P(24791): Exit OMX vdec Destructor
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/OMX-VDEC-1080P(24791): In OMX vdec Constructor
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.ts value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.concealedmb value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.extradata value is 0
+E/OMX-VDEC-1080P(24791): Successfully opened vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully created vdec ionlock
+E/OMX-VDEC-1080P(24791): Vdec instances = 1, ion device fd = 34
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Start of New Playback : role  = OMX.qcom.video.decoder.divx311 : DEVICE = /dev/msm_vidc_dec
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Open returned fd 35, errno 0
+E/OMX-VDEC-1080P(24791): component_init: current performance level = 0 
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread start
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init() success
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread start
+E/OMX-VDEC-1080P(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported ret NoMore
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (0), eCompressionFormat (0x0), eColorFormat (0x7fa30c03), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+W/ACodec  (24791): do not know color format 0x7fa30c03 = 2141391875
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (1), eCompressionFormat (0x0), eColorFormat (0x15), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (2), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (3), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.storeMetaDataInBuffers not implemented
+E/OMXNodeInstance(24791): getExtensionIndex(16:qcom.decoder.divx311, OMX.google.android.index.storeMetaDataInBuffers) ERROR: NotImplemented(0x80001006)
+E/OMX-VDEC-1080P(24791): set_parameter: OMX_GoogleAndroidIndexPrepareForAdaptivePlayback
+E/OMX-VDEC-1080P(24791): Enabling Adaptive playback for 1280 x 720
+E/OMX-VDEC-1080P(24791): Playback Ended - PASSED
+E/OMX-VDEC-1080P(24791): ALL output buffers are freed/released
+E/OMX-VDEC-1080P(24791): Calling VDEC_IOCTL_STOP_NEXT_MSG
+E/OMX-VDEC-1080P(24791): omx_vdec::component_deinit() complete
+E/OMX-VDEC-1080P(24791): In OMX Vdec Destructor(), Vdec instances = 1
+E/OMX-VDEC-1080P(24791): 
+E/OMX-VDEC-1080P(24791):  Error in ioctl read next msg
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Msg Thread exit
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Async Thread exit
+E/OMX-VDEC-1080P(24791): Calling close() on Video Driver
+E/OMX-VDEC-1080P(24791): Calling close() on vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully destroyed vdec ionlock
+E/OMX-VDEC-1080P(24791): Exit OMX vdec Destructor
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/OMX-VDEC-1080P(24791): In OMX vdec Constructor
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.ts value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.concealedmb value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.extradata value is 0
+E/OMX-VDEC-1080P(24791): Successfully opened vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully created vdec ionlock
+E/OMX-VDEC-1080P(24791): Vdec instances = 1, ion device fd = 34
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Start of New Playback : role  = OMX.qcom.video.decoder.divx4 : DEVICE = /dev/msm_vidc_dec
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Open returned fd 35, errno 0
+E/OMX-VDEC-1080P(24791): component_init: current performance level = 0 
+E/OMX-VDEC-1080P(24791): DIVX 4 Decoder selected
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread start
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init() success
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread start
+E/OMX-VDEC-1080P(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported ret NoMore
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (0), eCompressionFormat (0x0), eColorFormat (0x7fa30c03), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+W/ACodec  (24791): do not know color format 0x7fa30c03 = 2141391875
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (1), eCompressionFormat (0x0), eColorFormat (0x15), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (2), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (3), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.storeMetaDataInBuffers not implemented
+E/OMXNodeInstance(24791): getExtensionIndex(17:qcom.decoder.divx4, OMX.google.android.index.storeMetaDataInBuffers) ERROR: NotImplemented(0x80001006)
+E/OMX-VDEC-1080P(24791): set_parameter: OMX_GoogleAndroidIndexPrepareForAdaptivePlayback
+E/OMX-VDEC-1080P(24791): Enabling Adaptive playback for 1280 x 720
+E/OMX-VDEC-1080P(24791): Playback Ended - PASSED
+E/OMX-VDEC-1080P(24791): ALL output buffers are freed/released
+E/OMX-VDEC-1080P(24791): Calling VDEC_IOCTL_STOP_NEXT_MSG
+E/OMX-VDEC-1080P(24791): omx_vdec::component_deinit() complete
+E/OMX-VDEC-1080P(24791): In OMX Vdec Destructor(), Vdec instances = 1
+E/OMX-VDEC-1080P(24791): Waiting on OMX Msg Thread exit
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Async Thread exit
+E/OMX-VDEC-1080P(24791): 
+E/OMX-VDEC-1080P(24791):  Error in ioctl read next msg
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread stop
+E/OMX-VDEC-1080P(24791): Calling close() on Video Driver
+E/OMX-VDEC-1080P(24791): Calling close() on vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully destroyed vdec ionlock
+E/OMX-VDEC-1080P(24791): Exit OMX vdec Destructor
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/OMX-VDEC-1080P(24791): In OMX vdec Constructor
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.ts value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.concealedmb value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.extradata value is 0
+E/OMX-VDEC-1080P(24791): Successfully opened vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully created vdec ionlock
+E/OMX-VDEC-1080P(24791): Vdec instances = 1, ion device fd = 34
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Start of New Playback : role  = OMX.qcom.video.decoder.avc : DEVICE = /dev/msm_vidc_dec
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Open returned fd 35, errno 0
+E/OMX-VDEC-1080P(24791): component_init: current performance level = 0 
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init() success
+E/OMX-VDEC-1080P(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported nProfileIndex ret NoMore 3
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (0), eCompressionFormat (0x0), eColorFormat (0x7fa30c03), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+W/ACodec  (24791): do not know color format 0x7fa30c03 = 2141391875
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (1), eCompressionFormat (0x0), eColorFormat (0x15), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (2), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (3), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.storeMetaDataInBuffers not implemented
+E/OMXNodeInstance(24791): getExtensionIndex(18:qcom.decoder.avc, OMX.google.android.index.storeMetaDataInBuffers) ERROR: NotImplemented(0x80001006)
+E/OMX-VDEC-1080P(24791): set_parameter: OMX_GoogleAndroidIndexPrepareForAdaptivePlayback
+E/OMX-VDEC-1080P(24791): Enabling Adaptive playback for 1280 x 720
+E/OMX-VDEC-1080P(24791): Playback Ended - PASSED
+E/OMX-VDEC-1080P(24791): ALL output buffers are freed/released
+E/OMX-VDEC-1080P(24791): Calling VDEC_IOCTL_STOP_NEXT_MSG
+E/OMX-VDEC-1080P(24791): omx_vdec::component_deinit() complete
+E/OMX-VDEC-1080P(24791): In OMX Vdec Destructor(), Vdec instances = 1
+E/OMX-VDEC-1080P(24791): Waiting on OMX Msg Thread exit
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread start
+E/OMX-VDEC-1080P(24791): 
+E/OMX-VDEC-1080P(24791): ERROR: read from pipe failed, ret -1 errno 9
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread stop
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread start
+E/OMX-VDEC-1080P(24791): 
+E/OMX-VDEC-1080P(24791):  Error in ioctl read next msg
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Async Thread exit
+E/OMX-VDEC-1080P(24791): Calling close() on Video Driver
+E/OMX-VDEC-1080P(24791): Calling close() on vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully destroyed vdec ionlock
+E/OMX-VDEC-1080P(24791): Exit OMX vdec Destructor
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/OMX-VDEC-1080P(24791): In OMX vdec Constructor
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.ts value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.concealedmb value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.extradata value is 0
+E/OMX-VDEC-1080P(24791): Successfully opened vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully created vdec ionlock
+E/OMX-VDEC-1080P(24791): Vdec instances = 1, ion device fd = 34
+W/Parcel  (  599): Attempt to read object from Parcel 0x9f023c4c at offset 208 that is not in the object list
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Start of New Playback : role  = OMX.qcom.video.decoder.avc : DEVICE = /dev/msm_vidc_dec_sec
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Open returned fd 35, errno 0
+E/OMX-VDEC-1080P(24791): component_init: current performance level = 0 
+E/OMX-VDEC-1080P(24791): secureDisplay: START
+W/Parcel  (  599): Attempt to read object from Parcel 0x9d6f9c4c at offset 220 that is not in the object list
+E/OMX-VDEC-1080P(24791): Separate Metadata is supported in secure playback
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init() success
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread start
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread start
+E/OMX-VDEC-1080P(24791): secureDisplay: END
+E/OMX-VDEC-1080P(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported nProfileIndex ret NoMore 3
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (0), eCompressionFormat (0x0), eColorFormat (0x7fa30c03), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+W/ACodec  (24791): do not know color format 0x7fa30c03 = 2141391875
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (1), eCompressionFormat (0x0), eColorFormat (0x15), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (2), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (3), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.storeMetaDataInBuffers not implemented
+E/OMXNodeInstance(24791): getExtensionIndex(19:qcom.decoder.avc.secure, OMX.google.android.index.storeMetaDataInBuffers) ERROR: NotImplemented(0x80001006)
+E/OMX-VDEC-1080P(24791): set_parameter: OMX_GoogleAndroidIndexPrepareForAdaptivePlayback
+E/OMX-VDEC-1080P(24791): Enabling Adaptive playback for 1280 x 720
+E/OMX-VDEC-1080P(24791): Playback Ended - PASSED
+W/Parcel  (  599): Attempt to read object from Parcel 0x9e587c4c at offset 204 that is not in the object list
+E/OMX-VDEC-1080P(24791): unsecureDisplay: START
+E/OMX-VDEC-1080P(24791): ALL output buffers are freed/released
+E/OMX-VDEC-1080P(24791): Calling VDEC_IOCTL_STOP_NEXT_MSG
+E/OMX-VDEC-1080P(24791): unsecureDisplay: END
+E/OMX-VDEC-1080P(24791): omx_vdec::component_deinit() complete
+E/OMX-VDEC-1080P(24791): In OMX Vdec Destructor(), Vdec instances = 1
+E/OMX-VDEC-1080P(24791): Waiting on OMX Msg Thread exit
+E/OMX-VDEC-1080P(24791): 
+E/OMX-VDEC-1080P(24791):  Error in ioctl read next msg
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread stop
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Async Thread exit
+E/OMX-VDEC-1080P(24791): Calling close() on Video Driver
+W/Parcel  (  599): Attempt to read object from Parcel 0xaf4b7c4c at offset 216 that is not in the object list
+E/OMX-VDEC-1080P(24791): Calling close() on vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully destroyed vdec ionlock
+E/OMX-VDEC-1080P(24791): Exit OMX vdec Destructor
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/OMX-VDEC-1080P(24791): In OMX vdec Constructor
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.ts value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.concealedmb value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.extradata value is 0
+E/OMX-VDEC-1080P(24791): Successfully opened vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully created vdec ionlock
+E/OMX-VDEC-1080P(24791): Vdec instances = 1, ion device fd = 34
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Start of New Playback : role  = OMX.qcom.video.decoder.mpeg2 : DEVICE = /dev/msm_vidc_dec
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Open returned fd 35, errno 0
+E/OMX-VDEC-1080P(24791): component_init: current performance level = 0 
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init() success
+E/OMX-VDEC-1080P(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported nProfileIndex ret NoMore 2
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (0), eCompressionFormat (0x0), eColorFormat (0x7fa30c03), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+W/ACodec  (24791): do not know color format 0x7fa30c03 = 2141391875
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (1), eCompressionFormat (0x0), eColorFormat (0x15), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (2), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (3), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.storeMetaDataInBuffers not implemented
+E/OMXNodeInstance(24791): getExtensionIndex(1a:qcom.decoder.mpeg2, OMX.google.android.index.storeMetaDataInBuffers) ERROR: NotImplemented(0x80001006)
+E/OMX-VDEC-1080P(24791): set_parameter: OMX_GoogleAndroidIndexPrepareForAdaptivePlayback
+E/OMX-VDEC-1080P(24791): Enabling Adaptive playback for 1280 x 720
+E/OMX-VDEC-1080P(24791): Playback Ended - PASSED
+E/OMX-VDEC-1080P(24791): ALL output buffers are freed/released
+E/OMX-VDEC-1080P(24791): Calling VDEC_IOCTL_STOP_NEXT_MSG
+E/OMX-VDEC-1080P(24791): omx_vdec::component_deinit() complete
+E/OMX-VDEC-1080P(24791): In OMX Vdec Destructor(), Vdec instances = 1
+E/OMX-VDEC-1080P(24791): Waiting on OMX Msg Thread exit
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread start
+E/OMX-VDEC-1080P(24791): 
+E/OMX-VDEC-1080P(24791):  Error in ioctl read next msg
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread stop
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread start
+E/OMX-VDEC-1080P(24791): 
+E/OMX-VDEC-1080P(24791): ERROR: read from pipe failed, ret -1 errno 9
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Async Thread exit
+E/OMX-VDEC-1080P(24791): Calling close() on Video Driver
+I/Timeline(  599): Timeline: Activity_windows_visible id: ActivityRecord{27d27ff3 u0 com.android.gallery3d/.app.MovieActivity t3687} time:33832005
+E/OMX-VDEC-1080P(24791): Calling close() on vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully destroyed vdec ionlock
+E/OMX-VDEC-1080P(24791): Exit OMX vdec Destructor
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/OMX-VDEC-1080P(24791): In OMX vdec Constructor
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.ts value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.concealedmb value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.extradata value is 0
+E/OMX-VDEC-1080P(24791): Successfully opened vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully created vdec ionlock
+E/OMX-VDEC-1080P(24791): Vdec instances = 1, ion device fd = 34
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Start of New Playback : role  = OMX.qcom.video.decoder.mpeg2 : DEVICE = /dev/msm_vidc_dec_sec
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Open returned fd 35, errno 0
+E/OMX-VDEC-1080P(24791): component_init: current performance level = 0 
+E/OMX-VDEC-1080P(24791): secureDisplay: START
+W/Parcel  (  599): Attempt to read object from Parcel 0x9954dc4c at offset 220 that is not in the object list
+E/OMX-VDEC-1080P(24791): Separate Metadata is supported in secure playback
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init() success
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread start
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread start
+E/OMX-VDEC-1080P(24791): secureDisplay: END
+E/OMX-VDEC-1080P(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported nProfileIndex ret NoMore 2
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (0), eCompressionFormat (0x0), eColorFormat (0x7fa30c03), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+W/ACodec  (24791): do not know color format 0x7fa30c03 = 2141391875
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (1), eCompressionFormat (0x0), eColorFormat (0x15), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (2), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (3), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.storeMetaDataInBuffers not implemented
+E/OMXNodeInstance(24791): getExtensionIndex(1b:qcom.decoder.mpeg2.secure, OMX.google.android.index.storeMetaDataInBuffers) ERROR: NotImplemented(0x80001006)
+E/OMX-VDEC-1080P(24791): set_parameter: OMX_GoogleAndroidIndexPrepareForAdaptivePlayback
+E/OMX-VDEC-1080P(24791): Enabling Adaptive playback for 1280 x 720
+E/OMX-VDEC-1080P(24791): Playback Ended - PASSED
+W/Parcel  (  599): Attempt to read object from Parcel 0x98b67c4c at offset 204 that is not in the object list
+E/OMX-VDEC-1080P(24791): unsecureDisplay: START
+E/OMX-VDEC-1080P(24791): ALL output buffers are freed/released
+E/OMX-VDEC-1080P(24791): Calling VDEC_IOCTL_STOP_NEXT_MSG
+E/OMX-VDEC-1080P(24791): 
+E/OMX-VDEC-1080P(24791):  Error in ioctl read next msg
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread stop
+E/OMX-VDEC-1080P(24791): unsecureDisplay: END
+E/OMX-VDEC-1080P(24791): omx_vdec::component_deinit() complete
+E/OMX-VDEC-1080P(24791): In OMX Vdec Destructor(), Vdec instances = 1
+E/OMX-VDEC-1080P(24791): Waiting on OMX Msg Thread exit
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Async Thread exit
+E/OMX-VDEC-1080P(24791): Calling close() on Video Driver
+W/Parcel  (  599): Attempt to read object from Parcel 0x98e27c4c at offset 216 that is not in the object list
+E/OMX-VDEC-1080P(24791): Calling close() on vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully destroyed vdec ionlock
+E/OMX-VDEC-1080P(24791): Exit OMX vdec Destructor
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/OMX-VDEC-1080P(24791): In OMX vdec Constructor
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.ts value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.concealedmb value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.extradata value is 0
+E/OMX-VDEC-1080P(24791): Successfully opened vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully created vdec ionlock
+E/OMX-VDEC-1080P(24791): Vdec instances = 1, ion device fd = 34
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Start of New Playback : role  = OMX.qcom.video.decoder.mpeg4 : DEVICE = /dev/msm_vidc_dec
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Open returned fd 35, errno 0
+E/OMX-VDEC-1080P(24791): component_init: current performance level = 0 
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread start
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init() success
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread start
+E/OMX-VDEC-1080P(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported nProfileIndex ret NoMore 2
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (0), eCompressionFormat (0x0), eColorFormat (0x7fa30c03), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+W/ACodec  (24791): do not know color format 0x7fa30c03 = 2141391875
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (1), eCompressionFormat (0x0), eColorFormat (0x15), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (2), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (3), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.storeMetaDataInBuffers not implemented
+E/OMXNodeInstance(24791): getExtensionIndex(1c:qcom.decoder.mpeg4, OMX.google.android.index.storeMetaDataInBuffers) ERROR: NotImplemented(0x80001006)
+E/OMX-VDEC-1080P(24791): set_parameter: OMX_GoogleAndroidIndexPrepareForAdaptivePlayback
+E/OMX-VDEC-1080P(24791): Enabling Adaptive playback for 1280 x 720
+E/OMX-VDEC-1080P(24791): Playback Ended - PASSED
+E/OMX-VDEC-1080P(24791): ALL output buffers are freed/released
+E/OMX-VDEC-1080P(24791): Calling VDEC_IOCTL_STOP_NEXT_MSG
+E/OMX-VDEC-1080P(24791): omx_vdec::component_deinit() complete
+E/OMX-VDEC-1080P(24791): In OMX Vdec Destructor(), Vdec instances = 1
+E/OMX-VDEC-1080P(24791): 
+E/OMX-VDEC-1080P(24791):  Error in ioctl read next msg
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Msg Thread exit
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Async Thread exit
+E/OMX-VDEC-1080P(24791): Calling close() on Video Driver
+E/OMX-VDEC-1080P(24791): Calling close() on vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully destroyed vdec ionlock
+E/OMX-VDEC-1080P(24791): Exit OMX vdec Destructor
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/OMX-VDEC-1080P(24791): In OMX vdec Constructor
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.ts value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.concealedmb value is 0
+E/OMX-VDEC-1080P(24791): vidc.dec.debug.extradata value is 0
+E/OMX-VDEC-1080P(24791): Successfully opened vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully created vdec ionlock
+E/OMX-VDEC-1080P(24791): Vdec instances = 1, ion device fd = 34
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Start of New Playback : role  = OMX.qcom.video.decoder.h263 : DEVICE = /dev/msm_vidc_dec
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init(): Open returned fd 35, errno 0
+E/OMX-VDEC-1080P(24791): component_init: current performance level = 0 
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread start
+E/OMX-VDEC-1080P(24791): omx_vdec::component_init() success
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread start
+E/OMX-VDEC-1080P(24791): get_parameter: OMX_IndexParamVideoProfileLevelQuerySupported nProfileIndex ret NoMore 1
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (0), eCompressionFormat (0x0), eColorFormat (0x7fa30c03), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+W/ACodec  (24791): do not know color format 0x7fa30c03 = 2141391875
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (1), eCompressionFormat (0x0), eColorFormat (0x15), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (2), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.describeColorFormat not implemented
+E/OMX-VDEC-1080P(24791): Get_parameter: OMX_IndexParamVideoPortFormat: nPortIndex (1), nIndex (3), eCompressionFormat (0x0), eColorFormat (0x13), xFramerate (0xb142c95c)
+E/OMX-VDEC-1080P(24791): Extension: OMX.google.android.index.storeMetaDataInBuffers not implemented
+E/OMXNodeInstance(24791): getExtensionIndex(1d:qcom.decoder.h263, OMX.google.android.index.storeMetaDataInBuffers) ERROR: NotImplemented(0x80001006)
+E/OMX-VDEC-1080P(24791): set_parameter: OMX_GoogleAndroidIndexPrepareForAdaptivePlayback
+E/OMX-VDEC-1080P(24791): Enabling Adaptive playback for 1280 x 720
+E/OMX-VDEC-1080P(24791): Playback Ended - PASSED
+E/OMX-VDEC-1080P(24791): ALL output buffers are freed/released
+E/OMX-VDEC-1080P(24791): Calling VDEC_IOCTL_STOP_NEXT_MSG
+E/OMX-VDEC-1080P(24791): omx_vdec::component_deinit() complete
+E/OMX-VDEC-1080P(24791): 
+E/OMX-VDEC-1080P(24791):  Error in ioctl read next msg
+E/OMX-VDEC-1080P(24791): omx_vdec: Async thread stop
+E/OMX-VDEC-1080P(24791): In OMX Vdec Destructor(), Vdec instances = 1
+E/OMX-VDEC-1080P(24791): Waiting on OMX Msg Thread exit
+E/OMX-VDEC-1080P(24791): omx_vdec: message thread stop
+E/OMX-VDEC-1080P(24791): Waiting on OMX Async Thread exit
+E/OMX-VDEC-1080P(24791): Calling close() on Video Driver
+E/OMX-VDEC-1080P(24791): Calling close() on vdec ion devicefd = 34
+E/OMX-VDEC-1080P(24791): Successfully destroyed vdec ionlock
+E/OMX-VDEC-1080P(24791): Exit OMX vdec Destructor
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+E/        (24791): 
+E/        (24791):  Destroy C2D instance
+W/OMXNodeInstance(24791): [1e:google.mpeg4.decoder] component does not support metadata mode; using fallback
+W/OMXNodeInstance(24791): [1f:google.mpeg4.decoder] component does not support metadata mode; using fallback
+W/MediaCodecList(24791): ignoring Limit specified outside of a Type
+W/MediaCodecList(24791): ignoring Limit specified outside of a Type
+W/MediaCodecList(24791): ignoring Limit specified outside of a Type
+W/MediaCodecList(24791): ignoring Limit specified outside of a Type
+W/MediaCodecList(24791): ignoring Limit specified outside of a Type
+W/MediaCodecList(24791): ignoring Feature specified outside of a Type
+W/OMXNodeInstance(24791): [20:google.h263.decoder] component does not support metadata mode; using fallback
+W/OMXNodeInstance(24791): [21:google.h264.decoder] component does not support metadata mode; using fallback
+D/SoftHEVC(24791): Number of CPU cores: 4
+D/SoftHEVC(24791): Initializing decoder
+D/SoftHEVC(24791): Set number of cores to 4
+D/SoftHEVC(24791): Ittiam decoder version number: @(#)Id:HEVCDEC_production Ver:04.01 Released by ITTIAM Build: Nov 16 2015 @ 16:10:44
+W/OMXNodeInstance(24791): [22:google.hevc.decoder] component does not support metadata mode; using fallback
+D/SoftHEVC(24791): Freeing codec memory
+D/SoftHEVC(24791): Number of CPU cores: 4
+D/SoftHEVC(24791): Initializing decoder
+D/SoftHEVC(24791): Set number of cores to 4
+D/SoftHEVC(24791): Ittiam decoder version number: @(#)Id:HEVCDEC_production Ver:04.01 Released by ITTIAM Build: Nov 16 2015 @ 16:10:44
+D/SoftHEVC(24791): In SoftHEVC::~SoftHEVC
+D/SoftHEVC(24791): Freeing codec memory
+W/OMXNodeInstance(24791): [23:google.vp8.decoder] component does not support metadata mode; using fallback
+W/OMXNodeInstance(24791): [24:google.vp9.decoder] component does not support metadata mode; using fallback
+I/SoftMPEG4Encoder(24791): Construct SoftMPEG4Encoder
+W/ACodec  (24791): do not know color format 0x7f000789 = 2130708361
+I/SoftAVCEncoder(24791): Construct SoftAVCEncoder
+W/ACodec  (24791): do not know color format 0x7f000789 = 2130708361
+I/SoftMPEG4Encoder(24791): Construct SoftMPEG4Encoder
+W/ACodec  (24791): do not know color format 0x7f000789 = 2130708361
+W/ACodec  (24791): do not know color format 0x7f000789 = 2130708361
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.aac.decoder'
+D/SoftFFmpegAudio(24791): SoftFFmpegAudio component: OMX.ffmpeg.aac.decoder mCodingType: 21 mHighResAudioEnabled: 1
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.ape.decoder'
+D/SoftFFmpegAudio(24791): SoftFFmpegAudio component: OMX.ffmpeg.ape.decoder mCodingType: 2130706435 mHighResAudioEnabled: 1
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.atrial.decoder'
+D/SoftFFmpegAudio(24791): SoftFFmpegAudio component: OMX.ffmpeg.atrial.decoder mCodingType: 1 mHighResAudioEnabled: 1
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.dts.decoder'
+D/SoftFFmpegAudio(24791): SoftFFmpegAudio component: OMX.ffmpeg.dts.decoder mCodingType: 2130706436 mHighResAudioEnabled: 1
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.flac.decoder'
+D/SoftFFmpegAudio(24791): SoftFFmpegAudio component: OMX.ffmpeg.flac.decoder mCodingType: 28 mHighResAudioEnabled: 1
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.mp2.decoder'
+D/SoftFFmpegAudio(24791): SoftFFmpegAudio component: OMX.ffmpeg.mp2.decoder mCodingType: 2130706433 mHighResAudioEnabled: 1
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.ra.decoder'
+D/SoftFFmpegAudio(24791): SoftFFmpegAudio component: OMX.ffmpeg.ra.decoder mCodingType: 26 mHighResAudioEnabled: 1
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.wma.decoder'
+D/SoftFFmpegAudio(24791): SoftFFmpegAudio component: OMX.ffmpeg.wma.decoder mCodingType: 25 mHighResAudioEnabled: 1
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.divx.decoder'
+D/SoftFFmpegVideo(24791): SoftFFmpegVideo component: OMX.ffmpeg.divx.decoder codingType=2130706435 appData: 0xb5894b00
+W/OMXNodeInstance(24791): [31:ffmpeg.divx.decoder] component does not support metadata mode; using fallback
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.flv1.decoder'
+D/SoftFFmpegVideo(24791): SoftFFmpegVideo component: OMX.ffmpeg.flv1.decoder codingType=2130706434 appData: 0xb5894b00
+W/OMXNodeInstance(24791): [32:ffmpeg.flv1.decoder] component does not support metadata mode; using fallback
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.mpeg2.decoder'
+D/SoftFFmpegVideo(24791): SoftFFmpegVideo component: OMX.ffmpeg.mpeg2.decoder codingType=2 appData: 0xb5894b00
+W/OMXNodeInstance(24791): [33:ffmpeg.mpeg2.decoder] component does not support metadata mode; using fallback
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.mpeg4.decoder'
+D/SoftFFmpegVideo(24791): SoftFFmpegVideo component: OMX.ffmpeg.mpeg4.decoder codingType=4 appData: 0xb5894b00
+W/OMXNodeInstance(24791): [34:ffmpeg.mpeg4.decoder] component does not support metadata mode; using fallback
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.rv.decoder'
+D/SoftFFmpegVideo(24791): SoftFFmpegVideo component: OMX.ffmpeg.rv.decoder codingType=6 appData: 0xb5894b00
+W/OMXNodeInstance(24791): [35:ffmpeg.rv.decoder] component does not support metadata mode; using fallback
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.vc1.decoder'
+D/SoftFFmpegVideo(24791): SoftFFmpegVideo component: OMX.ffmpeg.vc1.decoder codingType=2130706433 appData: 0xb5894b00
+W/OMXNodeInstance(24791): [36:ffmpeg.vc1.decoder] component does not support metadata mode; using fallback
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.vtrial.decoder'
+D/SoftFFmpegVideo(24791): SoftFFmpegVideo component: OMX.ffmpeg.vtrial.decoder codingType=1 appData: 0xb5894b00
+W/OMXNodeInstance(24791): [37:ffmpeg.vtrial.decoder] component does not support metadata mode; using fallback
+V/FFmpegOMXPlugin(24791): makeComponentInstance 'OMX.ffmpeg.wmv.decoder'
+D/SoftFFmpegVideo(24791): SoftFFmpegVideo component: OMX.ffmpeg.wmv.decoder codingType=5 appData: 0xb5894b00
+W/OMXNodeInstance(24791): [38:ffmpeg.wmv.decoder] component does not support metadata mode; using fallback
+W/OMXNodeInstance(24791): [39:google.vp8.decoder] component does not support metadata mode; using fallback
+E/ACodec  (24791): [OMX.google.vp8.decoder] storeMetaDataInBuffers failed w/ err -1010
+I/ACodec  (24791): [OMX.google.vp8.decoder] DRC Mode: Port Reconfig Mode
+E/OMXNodeInstance(24791): getParameter(39:google.vp8.decoder, ParamVideoAndroidVp8Encoder(0x6f600007)) ERROR: UnsupportedIndex(0x8000101a)
+W/MediaPlayer( 4540): info/warning (3, 0)
+E/MediaPlayer-JNI( 4540): QCMediaPlayer mediaplayer NOT present
+W/ALooperRoster(24791): failed to post message. Target handler 0 still registered, but object gone.
+V/CodeauroraVideoView( 4540): surfaceChanged() start()
+D/ExtendedUtils(24791): extended extractor not needed, return default
+E/MediaPlayer( 4540): Should have subtitle controller already set
+D/MediaPlayer( 4540): getMetadata
+I/Timeline(  599): Timeline: Activity_windows_visible id: ActivityRecord{227c5f77 u0 com.android.gallery3d/.app.MovieActivity t3687} time:33832851

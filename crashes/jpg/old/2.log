@@ -1,0 +1,65 @@
+--------- beginning of main
+W/OpenGLRenderer( 1188): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+W/OpenGLRenderer( 1188): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+D/lights  (  599): set_light_leds: type=0, color=0x00ffff6000, fM=0, fOnMS=0, fOffMs=0.
+D/lights  (  599): write_leds: color=0x00ff6000, delay_on=0, delay_off=0, blink="0x00ff6000 0 0".
+D/AndroidRuntime(13033): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+D/AndroidRuntime(13033): CheckJNI is OFF
+D/AndroidRuntime(13033): Calling main entry com.android.commands.am.Am
+--------- beginning of system
+I/ActivityManager(  599): START u0 {act=android.intent.action.VIEW dat=file:///storage//sdcard0//tzeench//fuzzed.jpg typ=image/* flg=0x10000000 cmp=com.android.gallery3d/.app.GalleryActivity} from uid 2000 on display 0
+D/AndroidRuntime(13033): Shutting down VM
+V/WindowManager(  599): addAppToken: AppWindowToken{19558a18 token=Token{1c5329fb ActivityRecord{31339f8a u0 com.android.gallery3d/.app.GalleryActivity t3685}}} to stack=1 task=3685 at 10
+V/StateManager(11439): startState class com.android.gallery3d.app.SinglePhotoPage
+V/WindowManager(  599): Adding window Window{1252fc4 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity} at 23 of 26 (after Window{2b606fc u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity})
+V/WindowManager(  599): Adding window Window{2ce095e2 u0 SurfaceView} at 23 of 27 (before Window{1252fc4 u0 com.android.gallery3d/com.android.gallery3d.app.GalleryActivity})
+I/ActivityManager(  599): Displayed com.android.gallery3d/.app.GalleryActivity: +201ms
+I/GLRootView(11439): onSurfaceChanged: 1080x1845, gl10: com.google.android.gles_jni.GLImpl@180cadff
+F/libc    (13033): Fatal signal 11 (SIGSEGV), code 1, fault addr 0xb459e710 in tid 13051 (Binder_1)
+I/DEBUG   (  232): property debug.db.uid not set; NOT waiting for gdb.
+I/DEBUG   (  232): HINT: adb shell setprop debug.db.uid 100000
+I/DEBUG   (  232): HINT: adb forward tcp:5039 tcp:5039
+I/GLRootView(11439): layout content pane 1080x1845 (compensation 0)
+E/Sensors (  599): Acc old sensor_state 2176, new sensor_state : 2177 en : 1
+D/skia    (11439): --- decoder->buildTileIndex returned false
+W/DecodeUtils(11439): java.io.IOException: Image failed to decode using JPEG decoder
+W/DecodeUtils(11439): 	at android.graphics.BitmapRegionDecoder.nativeNewInstance(Native Method)
+W/DecodeUtils(11439): 	at android.graphics.BitmapRegionDecoder.newInstance(BitmapRegionDecoder.java:89)
+W/DecodeUtils(11439): 	at com.android.gallery3d.data.DecodeUtils.createBitmapRegionDecoder(DecodeUtils.java:232)
+W/DecodeUtils(11439): 	at com.android.gallery3d.data.UriImage$RegionDecoderJob.run(UriImage.java:186)
+W/DecodeUtils(11439): 	at com.android.gallery3d.data.UriImage$RegionDecoderJob.run(UriImage.java:174)
+W/DecodeUtils(11439): 	at com.android.gallery3d.util.ThreadPool$Worker.run(ThreadPool.java:133)
+W/DecodeUtils(11439): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/DecodeUtils(11439): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/DecodeUtils(11439): 	at java.lang.Thread.run(Thread.java:818)
+W/DecodeUtils(11439): 	at com.android.gallery3d.util.PriorityThreadFactory$1.run(PriorityThreadFactory.java:44)
+W/Worker  (11439): Exception in running a job
+W/Worker  (11439): java.lang.NullPointerException: Attempt to invoke virtual method 'int android.graphics.BitmapRegionDecoder.getWidth()' on a null object reference
+W/Worker  (11439): 	at com.android.gallery3d.data.UriImage$RegionDecoderJob.run(UriImage.java:188)
+W/Worker  (11439): 	at com.android.gallery3d.data.UriImage$RegionDecoderJob.run(UriImage.java:174)
+W/Worker  (11439): 	at com.android.gallery3d.util.ThreadPool$Worker.run(ThreadPool.java:133)
+W/Worker  (11439): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/Worker  (11439): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/Worker  (11439): 	at java.lang.Thread.run(Thread.java:818)
+W/Worker  (11439): 	at com.android.gallery3d.util.PriorityThreadFactory$1.run(PriorityThreadFactory.java:44)
+W/SinglePhotoDataAdapter(11439): fail to get region decoder, try to request thumb image
+E/DEBUG   (  232): unexpected waitpid response: n=13051, status=00000000
+E/DEBUG   (  232): tid exited before attach completed: tid 13051
+D/skia    (11439): --- decoder->decode returned false
+W/SinglePhotoDataAdapter(11439): fail to decode thumb
+W/SinglePhotoDataAdapter(11439): java.lang.NullPointerException: Attempt to invoke virtual method 'int android.graphics.Bitmap.getWidth()' on a null object reference
+W/SinglePhotoDataAdapter(11439): 	at com.android.gallery3d.app.SinglePhotoDataAdapter.onDecodeThumbComplete(SinglePhotoDataAdapter.java:151)
+W/SinglePhotoDataAdapter(11439): 	at com.android.gallery3d.app.SinglePhotoDataAdapter.access$200(SinglePhotoDataAdapter.java:39)
+W/SinglePhotoDataAdapter(11439): 	at com.android.gallery3d.app.SinglePhotoDataAdapter$1.handleMessage(SinglePhotoDataAdapter.java:70)
+W/SinglePhotoDataAdapter(11439): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+W/SinglePhotoDataAdapter(11439): 	at com.android.gallery3d.ui.SynchronizedHandler.dispatchMessage(SynchronizedHandler.java:36)
+W/SinglePhotoDataAdapter(11439): 	at android.os.Looper.loop(Looper.java:135)
+W/SinglePhotoDataAdapter(11439): 	at android.app.ActivityThread.main(ActivityThread.java:5294)
+W/SinglePhotoDataAdapter(11439): 	at java.lang.reflect.Method.invoke(Native Method)
+W/SinglePhotoDataAdapter(11439): 	at java.lang.reflect.Method.invoke(Method.java:372)
+W/SinglePhotoDataAdapter(11439): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+W/SinglePhotoDataAdapter(11439): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+I/Timeline(11439): Timeline: Activity_idle id: android.os.BinderProxy@1bca8159 time:32431587
+I/GLRootView(11439): layout content pane 1080x1845 (compensation 0)
+D/PhotoView(11439): compensation = 0, CameraRelativeFrame = Rect(0, 0 - 0, 0), mCameraRect = Rect(0, 0 - 0, 0)
+I/Timeline(  599): Timeline: Activity_windows_visible id: ActivityRecord{31339f8a u0 com.android.gallery3d/.app.GalleryActivity t3685} time:32432269

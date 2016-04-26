@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import sun.tools.jar.CommandLine;
 
 @SpringBootApplication
 public class Tzeentch implements CommandLineRunner {
@@ -19,6 +18,6 @@ public class Tzeentch implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        applicationLogic.iteration(FileTypes.JPG, 10);
+        applicationLogic.iterate(FileTypes.JPG, 10);
     }
 }

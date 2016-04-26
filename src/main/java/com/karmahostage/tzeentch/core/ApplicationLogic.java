@@ -26,9 +26,9 @@ public class ApplicationLogic {
     private String androidWorkingDirectory;
 
 
-    public void iteration(FileTypes fileType, int amount) {
+    public void iterate(FileTypes fileType, int times) {
         initiateNormalFlow(fileType);
-        IntStream.range(0, amount)
+        IntStream.range(0, times)
                 .forEach(element -> initiateFuzzFlow(fileType));
     }
 

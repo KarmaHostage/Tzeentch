@@ -1,5 +1,5 @@
 #/bin/bash
-
+. ./functions/crashcheck.sh
 function add_example_file {
   echo "adding reference file"
   adb push reference_format/input.$format $sd_location/tzeench/reference.$format
@@ -82,7 +82,8 @@ function fuzz {
       sleep 0.2
       check_state 1
       check_gallery
-      if [ "$restarted" -eq 1 ]; then
+      sigFound=$(errorFound "SIG")
+      if [ "$sigFound" -eq 1 ] || [ "$restarted" -eq 1 ]; then
       	 echo "--------> Crash detected ($format)!"
   	     cp ./fuzzed/$format/fuzzed.$format ./crashes/$format/$c.$format
   	     adb shell "logcat -d > /sdcard/crash-$format.log"
@@ -91,6 +92,7 @@ function fuzz {
   	    restarted=0
       fi;
     adb shell input keyevent 4
+    sleep 0.2
   done
 }
 

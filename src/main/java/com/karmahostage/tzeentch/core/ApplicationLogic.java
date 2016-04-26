@@ -29,19 +29,29 @@ public class ApplicationLogic {
     public void iterate(FileTypes fileType, int times) {
         initiateNormalFlow(fileType);
         IntStream.range(0, times)
-                .forEach(element -> initiateFuzzFlow(fileType));
+                .forEach(element -> initiateFuzzFlow(fileType, "0"));
     }
 
     private void initiateNormalFlow(FileTypes fileType) {
         startFile(fileType, "reference");
     }
 
-    private void initiateFuzzFlow(FileTypes fileType) {
-        File fuzzedFile = fuzz(fileType);
-        pushFile(fuzzedFile, fileType);
+    private void initiateFuzzFlow(FileTypes fileType, String initialProcessId) {
+        String processId = initialProcessId;
+        pushFile(fuzz(fileType), fileType);
         clearLogging();
         startFile(fileType, "fuzzed");
+        waitUntilStartOrCrash(processId);
+        checkApplication("com.android.gallery3d");
         reportLogging(fetchLogging());
+    }
+
+    private void checkApplication(String intentName) {
+        //TODO
+    }
+
+    private void waitUntilStartOrCrash(String processId) {
+        //TODO
     }
 
     private void reportLogging(String log) {

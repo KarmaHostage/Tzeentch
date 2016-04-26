@@ -1,15 +1,15 @@
-package com.karmahostage.tzeentch.core.adb.process;
+package com.karmahostage.tzeentch.core.os;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdbProcess {
+public class OsProcess {
 
     private ProcessBuilder processBuilder;
 
-    public AdbProcess(ProcessBuilder processBuilder) {
+    public OsProcess(ProcessBuilder processBuilder) {
         this.processBuilder = processBuilder;
     }
 

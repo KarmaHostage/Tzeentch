@@ -1,15 +1,14 @@
-package com.karmahostage.tzeentch.core.adb.process;
+package com.karmahostage.tzeentch.core.os;
 
-import com.karmahostage.tzeentch.core.adb.command.AdbCommand;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 
 @ConditionalOnProperty(value = "com.karmahostage.tzeentch.environment", havingValue = "windows")
-public class WindowsAdbProcessBuilder implements AdbProcessBuilder{
+public class WindowsProcessBuilder implements OsProcessBuilder {
 
     private static final String[] WIN_RUNTIME = { "cmd.exe", "/C" };
 
     @Override
-    public AdbProcess buildProcess(AdbCommand adbCommand) {
+    public OsProcess buildProcess(OsCommand osCommand) {
         throw new IllegalArgumentException("not yet implemented");
     }
 }

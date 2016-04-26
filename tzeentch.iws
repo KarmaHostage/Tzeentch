@@ -2,32 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97694291-ffb4-43fd-a519-530396a88f1b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/Adb.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/PushCommand.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/META-INF/tzeentch-compileKotlin.kotlin_module" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/TzeentchKt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/core/adb/AdbExecutor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/core/adb/AdbProcessBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/core/adb/OsxAdbProcessBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/core/adb/WindowsAdbProcessBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/core/adb/model/AdbCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/core/adb/model/AdbProcess.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/META-INF/tzeentch-compileKotlin.kotlin_module" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/com/karmahostage/tzeentch/Tzeentch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/kotlin-classes/main/com/karmahostage/tzeentch/TzeentchKt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/Tzeentch-0.0.1-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/Tzeentch-0.0.1-SNAPSHOT.jar.original" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/AdbExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/executor/AdbExecutor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/AdbProcessBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/AdbProcessBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/OsxAdbProcessBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/OsxAdbProcessBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/WindowsAdbProcessBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/WindowsAdbProcessBuilder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/model/AdbCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/AdbCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/model/AdbProcess.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/AdbProcess.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/ApplicationLogic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/AmCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/AmStartCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/LogcatCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/ShellCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/intents/ViewIntent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/fuzzing/Fuzzing.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/fuzzing/radamsa/Radamsa.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/os/OsCommand.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/AdbCommand.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/AdbProcess.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/os/OsProcess.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/AdbProcessBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/os/OsProcessBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/OsxAdbProcessBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/os/OsxProcessBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/WindowsAdbProcessBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/os/WindowsProcessBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/Tzeentch.class" afterPath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/Tzeentch.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/core/preparation/AndroidDevicePreparation.class" afterPath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/core/preparation/AndroidDevicePreparation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/core/preparation/TzeenchPreparation.class" afterPath="$PROJECT_DIR$/build/classes/main/com/karmahostage/tzeentch/core/preparation/TzeenchPreparation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/Tzeentch.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/Tzeentch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/Adb.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/Adb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/PushCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/PushCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/executor/AdbExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/executor/AdbExecutor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/preparation/AndroidDevicePreparation.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/preparation/AndroidDevicePreparation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tzeentch.ipr" afterPath="$PROJECT_DIR$/tzeentch.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/preparation/TzeenchPreparation.java" afterPath="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/preparation/TzeenchPreparation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tzeentch.iws" afterPath="$PROJECT_DIR$/tzeentch.iws" />
     </list>
     <ignored path="tzeentch.iws" />
@@ -93,18 +90,7 @@
     <system id="GRADLE">
       <state>
         <projects_view>
-          <tree_state>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tzeentch" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-            </PATH>
-          </tree_state>
+          <tree_state />
         </projects_view>
       </state>
     </system>
@@ -113,7 +99,139 @@
     <favorites_list name="tzeentch" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Tzeentch.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/Tzeentch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+              <folding>
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#653#654#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TzeenchPreparation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/preparation/TzeenchPreparation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidDevicePreparation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/preparation/AndroidDevicePreparation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="34" column="99" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationLogic.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/ApplicationLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1148#1149#0" expanded="true" />
+                <element signature="e#1196#1197#0" expanded="true" />
+                <element signature="e#1489#1490#0" expanded="true" />
+                <element signature="e#1528#1529#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShellCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/ShellCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <folding>
+                <element signature="e#108#109#0" expanded="true" />
+                <element signature="e#146#147#0" expanded="true" />
+                <element signature="e#183#184#0" expanded="true" />
+                <element signature="e#225#226#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogcatCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/LogcatCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+              <folding>
+                <element signature="e#165#166#0" expanded="true" />
+                <element signature="e#227#228#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#320#321#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AmCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/AmCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding>
+                <element signature="e#113#114#0" expanded="true" />
+                <element signature="e#156#157#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Adb.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/Adb.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#230#231#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewIntent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/intents/ViewIntent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+              <folding>
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -412,12 +530,28 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/WindowsAdbProcessBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/Adb.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/AdbProcess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/AdbCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/PushCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/executor/AdbExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/preparation/AndroidDevicePreparation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/fuzzing/Radamsa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/process/OsxAdbProcessBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/process/OsxProcessBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/AdbCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/OsCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/PushCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/os/WindowsProcessBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/os/OsCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/fuzzing/Fuzzing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/fuzzing/radamsa/Radamsa.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/AmStartCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/intents/ViewIntent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/AmCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/Adb.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/preparation/TzeenchPreparation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/Tzeentch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/ShellCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/LogcatCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/ApplicationLogic.java" />
       </list>
     </option>
   </component>
@@ -637,6 +771,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="os" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tzeentch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tzeentch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tzeentch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="adb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -660,6 +828,14 @@
     <property name="ignore_missing_gitignore" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.karmahostage.tzeentch.core.fuzzing" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.karmahostage.tzeentch.core.adb.command" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Tzeentch">
     <configuration default="false" name="Tzeentch" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -1193,12 +1369,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1461702025681</updated>
-      <workItem from="1461702026677" duration="935000" />
+      <workItem from="1461702026677" duration="5632000" />
     </task>
+    <task id="LOCAL-00001" summary="new architectural design and builder for adb connection">
+      <created>1461702979005</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1461702979005</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="935000" />
+    <option name="totallyTimeSpent" value="5632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="23" width="1440" height="873" extended-state="6" />
@@ -1217,7 +1401,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290653" sideWeight="0.49713877" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1266,6 +1450,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="new architectural design and builder for adb connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="new architectural design and builder for adb connection" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1295,104 +1481,214 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/AdbCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/executor/AdbExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/AdbProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/WindowsAdbProcessBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/OsxAdbProcessBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/os/OsxProcessBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/process/AdbProcessBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/os/WindowsProcessBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/os/OsCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/PushCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" column="86" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/preparation/LocalMachinePreparation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/fuzzing/radamsa/Radamsa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
           <folding>
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/Adb.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/fuzzing/Fuzzing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#411#412#0" expanded="false" />
+            <element signature="e#463#464#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/AmStartCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#190#191#0" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/AmCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#113#114#0" expanded="true" />
+            <element signature="e#156#157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/os/OsProcessBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/os/OsProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/intents/ViewIntent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/Tzeentch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/preparation/TzeenchPreparation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/executor/AdbExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        <state relative-caret-position="150">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/preparation/AndroidDevicePreparation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="34" column="99" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/ShellCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#108#109#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/preparation/LocalMachinePreparation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/command/LogcatCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="165">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <folding>
+            <element signature="e#165#166#0" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/adb/Adb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/karmahostage/tzeentch/core/ApplicationLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+            <element signature="e#1489#1490#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

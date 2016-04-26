@@ -1,12 +1,10 @@
-package com.karmahostage.tzeentch.core.adb.process;
-
-import com.karmahostage.tzeentch.core.adb.command.AdbCommand;
+package com.karmahostage.tzeentch.core.os;
 
 import java.util.Arrays;
 
-public interface AdbProcessBuilder {
+public interface OsProcessBuilder {
 
-    AdbProcess buildProcess(AdbCommand adbCommand);
+    OsProcess buildProcess(OsCommand osCommand);
 
     default <T> T[] concat(T[] first, T... second) {
         T[] result = Arrays.copyOf(first, first.length + second.length);

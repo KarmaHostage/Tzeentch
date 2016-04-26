@@ -1,7 +1,7 @@
 package com.karmahostage.tzeentch.core.adb.executor;
 
-import com.karmahostage.tzeentch.core.adb.process.AdbProcessBuilder;
-import com.karmahostage.tzeentch.core.adb.command.AdbCommand;
+import com.karmahostage.tzeentch.core.os.OsProcessBuilder;
+import com.karmahostage.tzeentch.core.os.OsCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -11,10 +11,10 @@ import java.util.stream.Collectors;
 public class AdbExecutor {
 
     @Autowired
-    private AdbProcessBuilder adbProcessBuilder;
+    private OsProcessBuilder adbProcessBuilder;
 
-    public String execute(AdbCommand adbCommand) {
-        return adbProcessBuilder.buildProcess(adbCommand)
+    public String execute(OsCommand osCommand) {
+        return adbProcessBuilder.buildProcess(osCommand)
                 .execute()
                 .stream()
                 .collect(Collectors.joining("\n"));

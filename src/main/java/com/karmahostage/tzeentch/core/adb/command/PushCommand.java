@@ -1,5 +1,7 @@
 package com.karmahostage.tzeentch.core.adb.command;
 
+import com.karmahostage.tzeentch.core.os.OsCommand;
+
 import java.io.File;
 
 public class PushCommand {
@@ -22,7 +24,7 @@ public class PushCommand {
         return this;
     }
 
-    public AdbCommand createCommand() {
-        return new AdbCommand("push " + source.getAbsolutePath() + " " + destination);
+    public OsCommand createCommand() {
+        return new OsCommand("adb", "push " + source.getAbsolutePath() + " " + destination);
     }
 }

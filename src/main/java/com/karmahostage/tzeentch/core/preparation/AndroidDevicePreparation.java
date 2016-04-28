@@ -2,8 +2,8 @@ package com.karmahostage.tzeentch.core.preparation;
 
 import com.karmahostage.tzeentch.core.FileTypes;
 import com.karmahostage.tzeentch.core.adb.Adb;
-import com.karmahostage.tzeentch.core.os.OsCommand;
 import com.karmahostage.tzeentch.core.adb.executor.AdbExecutor;
+import com.karmahostage.tzeentch.core.os.OsCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -34,7 +34,9 @@ class AndroidDevicePreparation {
                 .withSource(new File(inputFile(fileTypes)))
                 .withDestination(androidWorkingDirectory + "/reference." + fileTypes.getExtension())
                 .createCommand();
-        System.out.println(adb.execute(osCommand));
+        System.out.println(
+                adb.execute(osCommand)
+        );
     }
 
     private String inputFile(FileTypes filetype) {

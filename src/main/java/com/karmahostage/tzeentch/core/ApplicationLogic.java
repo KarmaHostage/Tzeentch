@@ -51,7 +51,7 @@ public class ApplicationLogic {
         pushBack();
         pushFile(fuzz(fileType), fileType);
         clearLogging();
-        startFile(fileType, "fuzzed");
+        startFile(fileType, "fuzzed_file");
         waitUntilStartOrCrash(initialProcessId);
         String applicationId = getApplicationId("com.android.gallery3d");
         if (applicationId.equals("") || !applicationId.equals(initialProcessId)) {
@@ -150,7 +150,7 @@ public class ApplicationLogic {
 
     private void pushFile(File fuzzedFile, FileTypes filetype) {
         OsCommand command = Adb.push().withSource(fuzzedFile)
-                .withDestination(androidWorkingDirectory + File.separator + "fuzzed." + filetype.getExtension())
+                .withDestination(androidWorkingDirectory + File.separator + "fuzzed_file." + filetype.getExtension())
                 .createCommand();
         System.out.println(
                 osProcessBuilder.buildProcess(command)
@@ -162,7 +162,7 @@ public class ApplicationLogic {
     private File fuzz(FileTypes fileTypes) {
         return fuzzing.radamsa()
                 .withSource(workingDirectory + File.separator + "learning" + File.separator + fileTypes.getExtension() + File.separator + "*." + fileTypes.getExtension())
-                .withDestination(workingDirectory + File.separator + "fuzzing" + File.separator + fileTypes.getExtension() + File.separator + "fuzzed." + fileTypes.getExtension())
+                .withDestination(workingDirectory + File.separator + "fuzzing" + File.separator + fileTypes.getExtension() + File.separator + "fuzzed_file." + fileTypes.getExtension())
                 .fuzz();
     }
 

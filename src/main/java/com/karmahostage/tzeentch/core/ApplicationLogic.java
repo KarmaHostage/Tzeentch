@@ -1,6 +1,7 @@
 package com.karmahostage.tzeentch.core;
 
 import com.karmahostage.tzeentch.core.adb.Adb;
+import com.karmahostage.tzeentch.core.adb.command.KeyEvent;
 import com.karmahostage.tzeentch.core.fuzzing.Fuzzing;
 import com.karmahostage.tzeentch.core.os.OsCommand;
 import com.karmahostage.tzeentch.core.os.OsProcessBuilder;
@@ -67,7 +68,7 @@ public class ApplicationLogic {
 
     private void pushBack() {
         osProcessBuilder.buildProcess(
-                Adb.shell().input().keyEvent().keyEvent("4")
+                Adb.shell().input().keyEvent().keyEvent(KeyEvent.BACK)
         ).execute();
     }
 
@@ -75,8 +76,6 @@ public class ApplicationLogic {
         OsCommand command = Adb.shell().ps().andLookForProcessName(intentName);
         List<String> entry = Stream.of(osProcessBuilder.buildProcess(command)
                 .execute()
-                .stream()
-                .collect(Collectors.joining("\n"))
                 .split(" ")
         )
                 .filter(element -> !element.isEmpty())
@@ -96,8 +95,6 @@ public class ApplicationLogic {
                             .cat()
                             .doCat(String.format("/proc/%s/status | grep State", processId))
                     ).execute()
-                            .stream()
-                            .collect(Collectors.joining("\n"))
                             .split(" ")
             ).filter(element -> !element.isEmpty())
                     .collect(Collectors.toList());
@@ -130,17 +127,14 @@ public class ApplicationLogic {
     private String fetchLogging() {
         OsCommand command = Adb.shell().logcat().dump();
         return osProcessBuilder.buildProcess(command)
-                .execute()
-                .stream()
-                .collect(Collectors.joining("\n"));
+                .execute();
     }
 
     private void clearLogging() {
         OsCommand command = Adb.shell().logcat().clear();
-        osProcessBuilder.buildProcess(command)
-                .execute()
-                .stream()
-                .forEach(System.out::println);
+        System.out.println(
+                osProcessBuilder.buildProcess(command).execute()
+        );
     }
 
     private void startFile(FileTypes fileType, String fileName) {
@@ -148,20 +142,20 @@ public class ApplicationLogic {
                 .withFileLocation(androidWorkingDirectory + File.separator + fileName + "." + fileType.getExtension())
                 .withFileType(fileType.getMediatype())
                 .toCommand();
-        osProcessBuilder.buildProcess(command)
-                .execute()
-                .stream()
-                .forEach(System.out::println);
+        System.out.println(
+                osProcessBuilder.buildProcess(command)
+                        .execute()
+        );
     }
 
     private void pushFile(File fuzzedFile, FileTypes filetype) {
         OsCommand command = Adb.push().withSource(fuzzedFile)
                 .withDestination(androidWorkingDirectory + File.separator + "fuzzed." + filetype.getExtension())
                 .createCommand();
-        osProcessBuilder.buildProcess(command)
-                .execute()
-                .stream()
-                .forEach(System.out::println);
+        System.out.println(
+                osProcessBuilder.buildProcess(command)
+                        .execute()
+        );
     }
 
 

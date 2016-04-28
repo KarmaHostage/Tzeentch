@@ -10,4 +10,15 @@ public class ShellCommand {
         return new LogcatCommand();
     }
 
+    public PsCommand ps() {
+        return new PsCommand();
+    }
+
+    public InputCommand input() {
+        return new InputCommand();
+    }
+
+    public CatCommand cat() {
+        return new CatCommand();
+    }
 }

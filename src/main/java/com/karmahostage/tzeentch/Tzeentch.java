@@ -18,6 +18,6 @@ public class Tzeentch implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        applicationLogic.iterate(FileTypes.JPG, 10);
+        applicationLogic.iterate(FileTypes.JPG, 1);
     }
 }

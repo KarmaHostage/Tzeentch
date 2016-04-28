@@ -9,8 +9,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
+import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+import static org.apache.commons.lang3.math.NumberUtils.isNumber;
 
 @Component
 public class ApplicationLogic {
@@ -27,31 +31,96 @@ public class ApplicationLogic {
 
 
     public void iterate(FileTypes fileType, int times) {
-        initiateNormalFlow(fileType);
+        String applicationId = initiateNormalFlow(fileType);
+        startFuzzing(fileType, applicationId);
         IntStream.range(0, times)
                 .forEach(element -> initiateFuzzFlow(fileType, "0"));
     }
 
-    private void initiateNormalFlow(FileTypes fileType) {
+    private void startFuzzing(FileTypes fileType, String applicationId) {
+        initiateFuzzFlow(fileType, applicationId);
+    }
+
+    private String initiateNormalFlow(FileTypes fileType) {
         startFile(fileType, "reference");
+        return getApplicationId("com.android.gallery3d");
     }
 
     private void initiateFuzzFlow(FileTypes fileType, String initialProcessId) {
-        String processId = initialProcessId;
+        pushBack();
         pushFile(fuzz(fileType), fileType);
         clearLogging();
         startFile(fileType, "fuzzed");
-        waitUntilStartOrCrash(processId);
-        checkApplication("com.android.gallery3d");
-        reportLogging(fetchLogging());
+        waitUntilStartOrCrash(initialProcessId);
+        String applicationId = getApplicationId("com.android.gallery3d");
+        if (applicationId.equals("") || !applicationId.equals(initialProcessId)) {
+            System.out.println("---> application crashed! send logs to backend");
+            String newApplicationId = initiateNormalFlow(fileType);
+            initiateFuzzFlow(fileType, newApplicationId);
+        } else {
+            System.out.println("---> application not crashed, send logs to backend for SIG checks");
+            sendLogging(fetchLogging());
+            initiateFuzzFlow(fileType, applicationId);
+        }
+
     }
 
-    private void checkApplication(String intentName) {
-        //TODO
+    private void pushBack() {
+        osProcessBuilder.buildProcess(
+                Adb.shell().input().keyEvent().keyEvent("4")
+        ).execute();
+    }
+
+    private String getApplicationId(String intentName) {
+        OsCommand command = Adb.shell().ps().andLookForProcessName(intentName);
+        List<String> entry = Stream.of(osProcessBuilder.buildProcess(command)
+                .execute()
+                .stream()
+                .collect(Collectors.joining("\n"))
+                .split(" ")
+        )
+                .filter(element -> !element.isEmpty())
+                .collect(Collectors.toList());
+
+        if (entry.size() > 1 && !entry.get(1).isEmpty() && isNumber(entry.get(1))) {
+            return entry.get(1);
+        }
+        return "";
     }
 
     private void waitUntilStartOrCrash(String processId) {
-        //TODO
+        for (int i = 0; i < 10; i++) {
+            List<String> state = Stream.of(osProcessBuilder.buildProcess(
+                    Adb
+                            .shell()
+                            .cat()
+                            .doCat(String.format("/proc/%s/status | grep State", processId))
+                    ).execute()
+                            .stream()
+                            .collect(Collectors.joining("\n"))
+                            .split(" ")
+            ).filter(element -> !element.isEmpty())
+                    .collect(Collectors.toList());
+
+            if (state != null && state.size() > 0 && state.get(0).equals("State:\tS")) {
+                return;
+            } else {
+                System.out.println("Process is still starting up or has crashed, going to bed");
+                sleep();
+            }
+        }
+    }
+
+    private void sleep() {
+        try {
+            Thread.sleep(1000);
+        } catch (Exception ex) {
+            System.out.println("sleep interrupted");
+        }
+    }
+
+    private void sendLogging(String log) {
+        //send it to backend
     }
 
     private void reportLogging(String log) {
@@ -98,8 +167,8 @@ public class ApplicationLogic {
 
     private File fuzz(FileTypes fileTypes) {
         return fuzzing.radamsa()
-                .withSource(workingDirectory + File.separator + "learning" + File.separator + FileTypes.JPG.getExtension() + File.separator + "*." + FileTypes.JPG.getExtension())
-                .withDestination(workingDirectory + File.separator + "fuzzing" + File.separator + FileTypes.JPG.getExtension() + File.separator + "fuzzed." + FileTypes.JPG.getExtension())
+                .withSource(workingDirectory + File.separator + "learning" + File.separator + fileTypes.getExtension() + File.separator + "*." + fileTypes.getExtension())
+                .withDestination(workingDirectory + File.separator + "fuzzing" + File.separator + fileTypes.getExtension() + File.separator + "fuzzed." + fileTypes.getExtension())
                 .fuzz();
     }
 
